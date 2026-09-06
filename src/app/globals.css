@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --sand: #f4e6c8;
+  --gold: #e4b15a;
+  --gold-deep: #c4892b;
+  --lagoon: #0e3d38;
+  --ink: #071310;
+  --foam: #f7f3ea;
+}
+
+@theme inline {
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-outfit);
+  --color-sand: var(--sand);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-lagoon: var(--lagoon);
+  --color-ink: var(--ink);
+  --color-foam: var(--foam);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ink);
+  color: var(--foam);
+  font-family: var(--font-outfit), system-ui, sans-serif;
+}
+
+::selection {
+  background: #e4b15a;
+  color: #071310;
+}
+
+.grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+}
+
+.gold-line {
+  background: linear-gradient(90deg, transparent, #e4b15a, transparent);
+}
