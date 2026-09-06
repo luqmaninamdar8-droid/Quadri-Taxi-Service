@@ -7,7 +7,7 @@ import { areas, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Quadri Taxi Service in South Goa",
   description:
-    "Meet Quadri Taxi Service — a 24/7 private transportation and tour provider based at Gogol Housing Board, Margao, Davorlim. Local commutes, outstation travel, and tailored holidays.",
+    "Meet Quadri Taxi Service — a 24/7 private transportation and tour provider based at Gogol Housing Board, Margao, Goa 403601. Local commutes, outstation travel, and tailored holidays.",
   alternates: { canonical: "/about" },
 };
 
@@ -25,7 +25,7 @@ export default function AboutPage() {
             grandparents who would rather not change cars three times.
           </p>
           <p>
-            From our base at Gogol Housing Board in Margao, Davorlim, we cover local
+            From our base at Gogol Housing Board in Margao, we cover local
             commutes across Salcete, outstation corridors into Maharashtra and Karnataka,
             and holiday itineraries that treat Goa as more than a beach transfer.
           </p>
@@ -132,7 +132,7 @@ export default function AboutPage() {
           <p className="mt-4 text-foam/70">
             Most guests never come to Gogol. The car comes to the hotel. If you are local
             and prefer to confirm a wedding fleet in person, we are at Gogol Housing Board,
-            Margao, Davorlim, Goa 403601.{" "}
+            Margao, Goa 403601.{" "}
             <Link href="/contact" className="text-gold hover:underline">
               Map and booking form
             </Link>

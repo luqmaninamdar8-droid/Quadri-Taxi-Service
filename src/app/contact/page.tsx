@@ -6,7 +6,7 @@ import { areas, faqs, pickupTips, site, telHref } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact & Book a Taxi in Margao, Goa",
   description:
-    "Contact Quadri Taxi Service at Gogol Housing Board, Margao, Davorlim, Goa 403601. Book 24/7 airport taxis, tours, luxury cars, and minibuses. Map, WhatsApp, and booking form included.",
+    "Contact Quadri Taxi Service at Gogol Housing Board, Margao, Goa 403601. Book 24/7 airport taxis, tours, luxury cars, and minibuses. Map, WhatsApp, and booking form included.",
   alternates: { canonical: "/contact" },
 };
 
@@ -21,7 +21,7 @@ export default function ContactPage() {
         below opens a pre-filled message so nothing is missed.
       </p>
       <p className="mt-4 max-w-2xl text-foam/70">
-        Walking in: Gogol Housing Board is in Davorlim, on the Margao side of South Goa,
+        Walking in: Gogol Housing Board is on the Margao side of South Goa,
         close to Madgaon railway station and a straightforward drive to Colva and
         Benaulim. If you are a guest, you do not need to visit — we collect you.
       </p>
@@ -66,11 +66,11 @@ export default function ContactPage() {
         <div>
           <h2 className="font-display text-2xl">Map of Quadri Taxi Service</h2>
           <p className="mt-2 mb-4 text-sm text-foam/60">
-            Pin centred on Gogol Housing Board, Margao / Davorlim — our South Goa base.
+            Pin centred on Gogol Housing Board, Margao — our South Goa base.
           </p>
           <div className="overflow-hidden rounded-[2rem] border border-white/10">
             <iframe
-              title="Map of Quadri Taxi Service, Gogol Housing Board, Margao, Davorlim, Goa"
+              title="Map of Quadri Taxi Service, Gogol Housing Board, Margao, Goa"
               src={site.mapEmbed}
               className="h-[520px] w-full grayscale-[0.2] contrast-[1.05]"
               loading="lazy"
@@ -91,7 +91,7 @@ export default function ContactPage() {
           {[
             {
               t: "From Madgaon station",
-              d: "A short taxi or auto hop into Davorlim / Gogol. Share your train number if you want us waiting at the exit.",
+              d: "A short taxi or auto hop into Gogol Housing Board. Share your train number if you want us waiting at the exit.",
             },
             {
               t: "From Dabolim Airport",

@@ -7,7 +7,7 @@ import { CtaBanner } from "@/components/CtaBanner";
 export const metadata: Metadata = {
   title: "24/7 Private Taxis & Holiday Tours in South Goa",
   description:
-    "Book Quadri Taxi Service for airport pickups, corporate cars, luxury vehicles, minibuses, long-distance travel, and custom Goa holiday itineraries. Based in Margao, Davorlim.",
+    "Book Quadri Taxi Service for airport pickups, corporate cars, luxury vehicles, minibuses, long-distance travel, and custom Goa holiday itineraries. Based in Margao, Goa.",
   alternates: { canonical: "/" },
 };
 
@@ -26,7 +26,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/55 to-ink" />
         <div className="grain pointer-events-none absolute inset-0 opacity-30 mix-blend-overlay" />
         <div className="relative mx-auto flex min-h-[92vh] max-w-6xl flex-col justify-end px-4 pb-16 pt-28 md:px-6">
-          <p className="text-xs uppercase tracking-[0.35em] text-gold">Margao · Davorlim · South Goa</p>
+          <p className="text-xs uppercase tracking-[0.35em] text-gold">Margao · South Goa</p>
           <h1 className="mt-4 max-w-3xl font-display text-5xl leading-[1.05] text-foam md:text-7xl">
             Private rides that feel like the rest of your Goa holiday.
           </h1>
@@ -222,7 +222,7 @@ export default function HomePage() {
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Coverage</p>
         <h2 className="mt-3 font-display text-4xl">Pickups across South Goa — and the rest of the map</h2>
         <p className="mt-4 max-w-2xl text-foam/65">
-          Our desk sits in Davorlim, minutes from Margao. Cars fan out daily to the
+          Our desk sits in Margao. Cars fan out daily to the
           beaches, both airports, the railway station, and North Goa hotels.
         </p>
         <ul className="mt-8 flex flex-wrap gap-2">

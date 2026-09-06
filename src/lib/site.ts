@@ -10,7 +10,7 @@ export const site = {
   email: "bookings@quadritaxiservice.in",
   hours: "Open 24 hours, every day",
   address: {
-    line: "Gogol Housing Board, Margao, Davorlim, Goa 403601",
+    line: "Gogol Housing Board, Margao, Goa 403601",
     street: "Gogol Housing Board",
     locality: "Margao",
     region: "Goa",
@@ -22,9 +22,9 @@ export const site = {
     lng: 73.975824,
   },
   mapEmbed:
-    "https://maps.google.com/maps?q=Gogol%20Housing%20Board%2C%20Margao%2C%20Davorlim%2C%20Goa%20403601&z=16&output=embed",
+    "https://maps.google.com/maps?q=Gogol%20Housing%20Board%2C%20Margao%2C%20Goa%20403601&z=16&output=embed",
   mapLink:
-    "https://www.google.com/maps/search/?api=1&query=Gogol+Housing+Board,+Margao,+Davorlim,+Goa+403601",
+    "https://www.google.com/maps/search/?api=1&query=Gogol+Housing+Board,+Margao,+Goa+403601",
 } as const;
 
 export const nav = [
@@ -175,7 +175,7 @@ export const faqs = [
   },
   {
     q: "Where are you based?",
-    a: "Our base is Gogol Housing Board, Margao, Davorlim, Goa 403601, with pickups across South and North Goa.",
+    a: "Our base is Gogol Housing Board, Margao, Goa 403601, with pickups across South and North Goa.",
   },
   {
     q: "How do I get a fare?",
