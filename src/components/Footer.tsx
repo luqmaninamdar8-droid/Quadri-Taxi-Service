@@ -7,8 +7,8 @@ export function Footer() {
       <div className="pointer-events-none absolute -left-24 top-0 h-64 w-64 rounded-full bg-lagoon/40 blur-3xl" />
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-4 md:px-6">
         <div className="md:col-span-2">
-          <p className="font-display text-2xl text-foam">
-            Quadri <span className="text-gold">Taxi Service</span>
+          <p className="title-rainbow font-display text-2xl">
+            Quadri Taxi Service
           </p>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-foam/65">
             24/7 private transportation and tour provider based in South Goa —

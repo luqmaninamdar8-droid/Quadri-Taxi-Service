@@ -29,7 +29,7 @@ export function BookingForm({ compact = false }: { compact?: boolean }) {
           compact ? "bg-ink/80 shadow-[0_20px_60px_rgba(0,0,0,0.45)] backdrop-blur-xl" : ""
         }`}
       >
-        <h2 className="font-display text-2xl">Book a car</h2>
+        <h2 className="title-rainbow font-display text-2xl">Book a car</h2>
         <p className="text-sm text-foam/60">
           {compact
             ? "Share pickup details. We reply with a fixed fare on WhatsApp."
@@ -164,7 +164,7 @@ export function BookingForm({ compact = false }: { compact?: boolean }) {
       {form}
 
       <aside>
-        <h2 className="font-display text-2xl">Choose your vehicle</h2>
+        <h2 className="title-rainbow font-display text-2xl">Choose your vehicle</h2>
         <p className="mt-2 text-sm text-foam/60">Tap a car to select it for the booking.</p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {fleet.map((car) => {

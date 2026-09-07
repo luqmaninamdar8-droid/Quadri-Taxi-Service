@@ -43,6 +43,33 @@ body {
   background: linear-gradient(90deg, transparent, #e4b15a, transparent);
 }
 
+.title-rainbow {
+  background-image: linear-gradient(
+    90deg,
+    #ff5c7a 0%,
+    #ff9f43 16%,
+    #ffd93d 33%,
+    #6bcb77 50%,
+    #4d96ff 66%,
+    #9b59b6 83%,
+    #ff5c7a 100%
+  );
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow-shift 7s linear infinite;
+}
+
+@keyframes rainbow-shift {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -71,6 +98,12 @@ body {
 
 .animate-slide-in-right {
   animation: slide-in-right 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.title-rainbow.animate-fade-up {
+  animation:
+    fade-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both,
+    rainbow-shift 7s linear infinite;
 }
 
 .delay-1 {
@@ -109,6 +142,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .title-rainbow,
   .animate-fade-up,
   .animate-slide-in-right,
   .is-revealed,
@@ -116,6 +150,7 @@ body {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
+    background-position: 0% center;
   }
 
   .motion-card:hover {

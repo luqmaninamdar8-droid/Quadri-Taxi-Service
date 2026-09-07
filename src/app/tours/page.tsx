@@ -28,7 +28,7 @@ export default function ToursPage() {
         <div className="relative mx-auto flex h-full max-w-6xl items-end px-4 pb-12 md:px-6">
           <div>
             <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">Tours</p>
-            <h1 className="animate-fade-up delay-1 mt-3 font-display text-5xl">Holiday itineraries, written around you</h1>
+            <h1 className="title-rainbow animate-fade-up delay-1 mt-3 font-display text-5xl">Holiday itineraries, written around you</h1>
           </div>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default function ToursPage() {
             <Reveal key={tour.title}>
             <article className="motion-card rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
               <p className="text-xs uppercase tracking-[0.25em] text-gold">{tour.duration}</p>
-              <h2 className="mt-2 font-display text-3xl">{tour.title}</h2>
+              <h2 className="title-rainbow mt-2 font-display text-3xl">{tour.title}</h2>
               <p className="mt-2 text-sm text-foam/50">Typical start: {tour.from}</p>
               <p className="mt-4 text-sm leading-relaxed text-foam/75">{tour.blurb}</p>
               <p className="mt-3 text-sm text-foam/55">Best for: {tour.bestFor}</p>
@@ -96,7 +96,7 @@ export default function ToursPage() {
         <Reveal>
         <section className="mt-16 grid gap-8 md:grid-cols-2">
           <div>
-            <h2 className="font-display text-3xl">How a custom day is built</h2>
+            <h2 className="title-rainbow font-display text-3xl">How a custom day is built</h2>
             <ol className="mt-6 grid gap-4 text-sm text-foam/70">
               <li>1. Hotel or villa pin, dates, and who is travelling (ages help with walking and AC breaks).</li>
               <li>2. Must-sees versus nice-to-haves — we drop a stop rather than rush the whole list.</li>
@@ -105,7 +105,7 @@ export default function ToursPage() {
             </ol>
           </div>
           <div className="motion-card rounded-[2rem] border border-white/10 p-8">
-            <h2 className="font-display text-3xl">Season notes</h2>
+            <h2 className="title-rainbow font-display text-3xl">Season notes</h2>
             <p className="mt-4 text-sm leading-relaxed text-foam/70">
               October to March is the busiest window for North Goa beaches and sunset forts.
               June to September is greener inland — spice estates shine, some waterfall

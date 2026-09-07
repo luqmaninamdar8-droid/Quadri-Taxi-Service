@@ -15,7 +15,7 @@ export default function ContactPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 md:px-6">
       <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">Contact</p>
-      <h1 className="animate-fade-up delay-1 mt-3 font-display text-5xl">Find us in Margao — or let us find you at the airport</h1>
+      <h1 className="title-rainbow animate-fade-up delay-1 mt-3 font-display text-5xl">Find us in Margao — or let us find you at the airport</h1>
       <p className="animate-fade-up delay-2 mt-4 max-w-2xl text-foam/70">
         Dispatch is awake all night. Share your flight, hotel, or itinerary and we
         confirm a vehicle within minutes. Most bookings start on WhatsApp; the form
@@ -30,7 +30,7 @@ export default function ContactPage() {
       <div className="mt-12 grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-6">
           <div className="motion-card rounded-3xl border border-white/10 p-6">
-            <h2 className="font-display text-2xl">Quadri Taxi Service</h2>
+            <h2 className="title-rainbow font-display text-2xl">Quadri Taxi Service</h2>
             <address className="mt-3 not-italic leading-relaxed text-foam/75">
               {site.address.line}
             </address>
@@ -65,7 +65,7 @@ export default function ContactPage() {
           </div>
         </div>
         <div>
-          <h2 className="font-display text-2xl">Map of Quadri Taxi Service</h2>
+          <h2 className="title-rainbow font-display text-2xl">Map of Quadri Taxi Service</h2>
           <p className="mt-2 mb-4 text-sm text-foam/60">
             Pin centred on Gogol Housing Board, Margao — our South Goa base.
           </p>
@@ -90,7 +90,7 @@ export default function ContactPage() {
 
       <Reveal>
       <section className="mt-16">
-        <h2 className="font-display text-3xl">How to reach Gogol Housing Board</h2>
+        <h2 className="title-rainbow font-display text-3xl">How to reach Gogol Housing Board</h2>
         <div className="mt-6 grid gap-5 md:grid-cols-3">
           {[
             {
@@ -117,7 +117,7 @@ export default function ContactPage() {
 
       <Reveal>
       <section className="mt-16">
-        <h2 className="font-display text-3xl">Pickup areas we quote every day</h2>
+        <h2 className="title-rainbow font-display text-3xl">Pickup areas we quote every day</h2>
         <ul className="mt-6 flex flex-wrap gap-2">
           {areas.map((area) => (
             <li key={area} className="rounded-full border border-white/10 px-4 py-2 text-sm">
@@ -130,7 +130,7 @@ export default function ContactPage() {
 
       <Reveal>
       <section className="mt-16">
-        <h2 className="font-display text-3xl">Before you message</h2>
+        <h2 className="title-rainbow font-display text-3xl">Before you message</h2>
         <div className="mt-6 divide-y divide-white/10 border-y border-white/10">
           {faqs.map((item) => (
             <details key={item.q} className="group py-4">

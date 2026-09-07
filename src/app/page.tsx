@@ -27,10 +27,10 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/55 to-ink" />
         <div className="grain pointer-events-none absolute inset-0 opacity-30 mix-blend-overlay" />
-        <div className="relative mx-auto grid min-h-[92vh] max-w-6xl items-center gap-10 px-4 pb-16 pt-28 lg:grid-cols-[1.05fr_0.95fr] md:px-6">
+        <div className="relative mx-auto flex min-h-[92vh] max-w-6xl items-center px-4 pb-16 pt-28 md:px-6">
           <div>
           <p className="animate-fade-up text-xs uppercase tracking-[0.35em] text-gold">Margao · South Goa</p>
-          <h1 className="animate-fade-up delay-1 mt-4 max-w-3xl font-display text-4xl leading-[1.05] md:text-6xl lg:text-7xl">
+          <h1 className="title-rainbow animate-fade-up delay-1 mt-4 max-w-3xl font-display text-4xl leading-[1.05] md:text-6xl lg:text-7xl">
             Private rides that feel like the rest of your Goa holiday.
           </h1>
           <p className="animate-fade-up delay-2 mt-5 max-w-xl text-lg text-foam/75">
@@ -41,7 +41,7 @@ export default function HomePage() {
           </p>
           <div className="animate-fade-up delay-3 mt-8 flex flex-wrap gap-3">
             <a
-              href={whatsappHref()}
+              href="#book"
               className="rounded-full bg-gold px-6 py-3 font-semibold text-ink hover:bg-sand"
             >
               Book a car now
@@ -76,16 +76,27 @@ export default function HomePage() {
             </div>
           </dl>
           </div>
-          <div className="animate-slide-in-right delay-2 w-full">
-            <BookingForm compact />
-          </div>
         </div>
       </section>
 
       <Reveal>
+      <section id="book" className="mx-auto max-w-6xl scroll-mt-28 px-4 py-16 md:px-6">
+        <p className="text-xs uppercase tracking-[0.3em] text-gold">Packages & booking</p>
+        <h2 className="title-rainbow mt-3 font-display text-4xl">Book a car or an hourly package</h2>
+        <p className="mt-4 max-w-2xl text-foam/65">
+          Share pickup details and a rental package if you need one. We reply with a
+          fixed fare on WhatsApp.
+        </p>
+        <div className="animate-slide-in-right delay-1 mt-10 max-w-xl">
+          <BookingForm compact />
+        </div>
+      </section>
+      </Reveal>
+
+      <Reveal>
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">How booking works</p>
-        <h2 className="mt-3 font-display text-4xl">Four messages. Then a car at the door.</h2>
+        <h2 className="title-rainbow mt-3 font-display text-4xl">Four messages. Then a car at the door.</h2>
         <p className="mt-4 max-w-2xl text-foam/65">
           Most first bookings take a few minutes on WhatsApp. You do not need an app
           login. Send the brief, lock the fare, meet the chauffeur.
@@ -107,7 +118,7 @@ export default function HomePage() {
         <div className="flex items-end justify-between gap-6">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-gold">Services</p>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl">Five ways we move you through Goa</h2>
+            <h2 className="title-rainbow mt-3 font-display text-4xl md:text-5xl">Five ways we move you through Goa</h2>
             <p className="mt-3 max-w-xl text-sm text-foam/60">
               Airport taxis, corporate cars, long-distance outstation trips, luxury vehicles,
               and minibuses — each with a private chauffeur and a fare agreed in advance.
@@ -162,7 +173,7 @@ export default function HomePage() {
           </div>
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-gold">Why Quadri</p>
-            <h2 className="mt-3 font-display text-4xl">South Goa based. Whole-state reach.</h2>
+            <h2 className="title-rainbow mt-3 font-display text-4xl">South Goa based. Whole-state reach.</h2>
             <p className="mt-4 text-foam/70">
               From Gogol Housing Board we dispatch chauffeurs who already know Colva,
               Palolem, the Margao railway station, and the late-night run to Mopa. You get
@@ -199,7 +210,7 @@ export default function HomePage() {
       <Reveal>
       <section className="mx-auto max-w-6xl px-4 py-20 md:px-6">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Holiday itineraries</p>
-        <h2 className="mt-3 font-display text-4xl">Tours paced like a private driver, not a bus.</h2>
+        <h2 className="title-rainbow mt-3 font-display text-4xl">Tours paced like a private driver, not a bus.</h2>
         <p className="mt-4 max-w-2xl text-foam/65">
           Sample days below are starting points. We shorten, swap beaches, add a spice
           lunch, or keep the same car for two days once we know your hotel and energy levels.
@@ -228,7 +239,7 @@ export default function HomePage() {
 
       <Reveal>
       <section className="mx-auto max-w-6xl px-4 pb-20 md:px-6">
-        <h2 className="font-display text-4xl">Guests remember the car as much as the beach</h2>
+        <h2 className="title-rainbow font-display text-4xl">Guests remember the car as much as the beach</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           {reviews.map((review) => (
             <blockquote key={review.name} className="motion-card rounded-3xl bg-white/[0.04] p-6">
@@ -246,7 +257,7 @@ export default function HomePage() {
       <Reveal>
       <section className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Coverage</p>
-        <h2 className="mt-3 font-display text-4xl">Pickups across South Goa — and the rest of the map</h2>
+        <h2 className="title-rainbow mt-3 font-display text-4xl">Pickups across South Goa — and the rest of the map</h2>
         <p className="mt-4 max-w-2xl text-foam/65">
           Our desk sits in Margao. Cars fan out daily to the
           beaches, both airports, the railway station, and North Goa hotels.
@@ -275,7 +286,7 @@ export default function HomePage() {
 
       <Reveal>
       <section className="mx-auto max-w-6xl px-4 pb-24 md:px-6">
-        <h2 className="font-display text-4xl">Questions before you land</h2>
+        <h2 className="title-rainbow font-display text-4xl">Questions before you land</h2>
         <div className="mt-8 divide-y divide-white/10 border-y border-white/10">
           {faqs.map((item) => (
             <details key={item.q} className="group py-5">

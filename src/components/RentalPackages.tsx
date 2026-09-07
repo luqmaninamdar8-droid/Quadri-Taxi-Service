@@ -4,7 +4,7 @@ export function RentalPackages() {
   return (
     <section id="rental-packages">
       <p className="text-xs uppercase tracking-[0.3em] text-gold">Local hire</p>
-      <h2 className="mt-3 font-display text-4xl">Rental package</h2>
+      <h2 className="title-rainbow mt-3 font-display text-4xl">Rental package</h2>
       <p className="mt-4 max-w-2xl text-foam/70">
         Hourly cabs with a matching kilometre limit. Extra hours and extra km are
         quoted before you extend. Choose Baleno, Dzire, Ertiga, Innova Crysta, or Kia Carens when you book.

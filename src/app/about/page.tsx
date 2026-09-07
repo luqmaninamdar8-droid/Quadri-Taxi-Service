@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 md:px-6">
       <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">About</p>
-      <h1 className="animate-fade-up delay-1 mt-3 max-w-3xl font-display text-5xl">A South Goa taxi desk that still answers the phone at 3am</h1>
+      <h1 className="title-rainbow animate-fade-up delay-1 mt-3 max-w-3xl font-display text-5xl">A South Goa taxi desk that still answers the phone at 3am</h1>
       <div className="mt-10 grid items-start gap-10 md:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-5 text-foam/75 leading-relaxed">
           <p>
@@ -71,7 +71,7 @@ export default function AboutPage() {
 
       <Reveal>
       <section className="mt-16">
-        <h2 className="font-display text-4xl">What we will not do</h2>
+        <h2 className="title-rainbow font-display text-4xl">What we will not do</h2>
         <p className="mt-4 max-w-2xl text-foam/70">
           We do not run shared tourist buses, meter-only surprises on quoted packages, or
           itineraries that treat every guest like a checklist. If a stop will ruin the
@@ -103,7 +103,7 @@ export default function AboutPage() {
 
       <Reveal>
       <section className="mt-16">
-        <h2 className="font-display text-4xl">Where the cars actually go</h2>
+        <h2 className="title-rainbow font-display text-4xl">Where the cars actually go</h2>
         <p className="mt-4 max-w-2xl text-foam/70">
           Daily work is South Goa heavy. North Goa and outstation jobs are scheduled,
           not improvised at midnight — unless you need an emergency airport run, which
@@ -135,7 +135,7 @@ export default function AboutPage() {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <h2 className="font-display text-3xl">Visit the desk — or never see it</h2>
+          <h2 className="title-rainbow font-display text-3xl">Visit the desk — or never see it</h2>
           <p className="mt-4 text-foam/70">
             Most guests never come to Gogol. The car comes to the hotel. If you are local
             and prefer to confirm a wedding fleet in person, we are at Gogol Housing Board,

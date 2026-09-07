@@ -26,8 +26,8 @@ export function Header() {
             </svg>
           </span>
           <span>
-            <span className="block font-display text-lg leading-none tracking-tight text-foam">
-              Quadri <span className="text-gold">Taxi</span>
+            <span className="title-rainbow block font-display text-lg leading-none tracking-tight">
+              Quadri Taxi
             </span>
             <span className="mt-1 block text-[11px] uppercase tracking-[0.22em] text-foam/55">
               South Goa · 24/7
