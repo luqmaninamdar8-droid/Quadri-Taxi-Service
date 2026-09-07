@@ -1,4 +1,4 @@
-import { faqs, services, site } from "@/lib/site";
+import { faqs, cabServiceLocations, services, site } from "@/lib/site";
 
 export function JsonLd() {
   const data = {
@@ -14,10 +14,17 @@ export function JsonLd() {
         email: site.email,
         priceRange: "₹₹",
         description: site.description,
-        areaServed: ["South Goa", "North Goa", "Goa", "Maharashtra", "Karnataka"],
+        areaServed: [
+          "South Goa",
+          "North Goa",
+          "Goa",
+          "Maharashtra",
+          "Karnataka",
+          ...cabServiceLocations,
+        ],
         availableChannel: {
           "@type": "ServiceChannel",
-          availableLanguage: ["English", "Hindi", "Konkani"],
+          availableLanguage: ["English", "Hindi", "Marathi", "Konkani"],
           serviceUrl: `${site.url}/contact`,
         },
         openingHoursSpecification: {

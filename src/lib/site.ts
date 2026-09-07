@@ -195,6 +195,42 @@ export const faqs = [
   },
 ];
 
+export const cabServiceLocations = [
+  "Varca",
+  "Majorda",
+  "Betalbatim",
+  "Utorda",
+  "Cavelossim",
+  "Cabo de Rama",
+  "Mobor",
+  "Panaji",
+  "Dabolim Airport",
+  "Madgaon Railway Station",
+  "Madgaon",
+  "Colva",
+  "Benaulim",
+  "Calangute",
+  "Baga",
+  "Candolim",
+  "Arpora",
+  "Palolem",
+] as const;
+
+export const rentalPackages = [
+  { hours: 1, km: 10, label: "1 Hour 10 km" },
+  { hours: 2, km: 20, label: "2 Hours 20 km" },
+  { hours: 3, km: 30, label: "3 Hours 30 km" },
+  { hours: 4, km: 40, label: "4 Hours 40 km" },
+  { hours: 5, km: 50, label: "5 Hours 50 km" },
+  { hours: 6, km: 60, label: "6 Hours 60 km" },
+  { hours: 7, km: 70, label: "7 Hours 70 km" },
+  { hours: 8, km: 80, label: "8 Hours 80 km" },
+  { hours: 9, km: 90, label: "9 Hours 90 km" },
+  { hours: 10, km: 100, label: "10 Hours 100 km" },
+  { hours: 11, km: 110, label: "11 Hours 110 km" },
+  { hours: 12, km: 120, label: "12 Hours 120 km" },
+] as const;
+
 export const areas = [
   "Margao & Davorlim",
   "Colva & Benaulim",
@@ -236,7 +272,7 @@ export const pickupTips = [
   "Passenger count, child seats, and oversized luggage",
   "Preferred vehicle: Swift Dzire, Innova Crysta, or Ertiga",
   "Flight / train number for airport and station pickups",
-  "Preferred language: English, Hindi, or Konkani",
+  "Preferred language: English, Hindi, Marathi, or Konkani",
 ];
 
 export const fleet = [

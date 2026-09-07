@@ -37,7 +37,7 @@ export default function AboutPage() {
           <p>
             Drivers who work with us are expected to know the difference between a tourist
             rush and a family pace: when to wait at a church porch, when to skip a crowded
-            beach parking lot, and how to brief a guest in English, Hindi, or Konkani
+            beach parking lot, and how to brief a guest in English, Hindi, Marathi, or Konkani
             without filling the cabin with chatter.
           </p>
         </div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
           ))}
         </ul>
         <p className="mt-8 text-sm text-foam/60">
-          Languages in the cabin: English, Hindi, Konkani. GST invoices for corporate
+          Languages in the cabin: English, Hindi, Marathi, Konkani. GST invoices for corporate
           accounts. Child seats on request.
         </p>
       </section>

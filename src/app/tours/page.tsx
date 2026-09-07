@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { CtaBanner } from "@/components/CtaBanner";
+import { RentalPackages } from "@/components/RentalPackages";
 import { tours, whatsappHref } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Private Goa Holiday Itineraries & Day Tours",
   description:
-    "Tailored holiday itineraries with Quadri Taxi Service: South Goa heritage, spice and waterfall circuits, beach-hopping, North Goa highlights, Margao mornings, and multi-day private cars.",
+    "Private Goa holiday itineraries, day tours, and rental packages from 1 Hour 10 km to 12 Hours 120 km with Quadri Taxi Service.",
   alternates: { canonical: "/tours" },
 };
 
@@ -81,6 +82,10 @@ export default function ToursPage() {
               </a>
             </article>
           ))}
+        </div>
+
+        <div className="mt-16">
+          <RentalPackages />
         </div>
 
         <section className="mt-16 grid gap-8 md:grid-cols-2">

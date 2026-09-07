@@ -152,13 +152,13 @@ export default function HomePage() {
             <p className="mt-4 text-foam/70">
               Local commutes across Salcete, hotel hops in North Goa, and outstation
               corridors into Maharashtra and Karnataka all sit on the same 24/7 desk.
-              English, Hindi, and Konkani are spoken in the cabin. Child seats and extra
+              English, Hindi, Marathi, and Konkani are spoken in the cabin. Child seats and extra
               luggage space are arranged when you book — not improvised at the kerb.
             </p>
             <ul className="mt-8 grid gap-4 text-sm">
               {[
                 "Fixed quotes before you confirm — no meter surprises",
-                "English, Hindi & Konkani speaking drivers",
+                "English, Hindi, Marathi & Konkani speaking drivers",
                 "Child seats, extra luggage, and temple/church-day timing",
                 "Multi-day holiday cars that stay with your family",
               ].map((item) => (

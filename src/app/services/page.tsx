@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
-import { faqs, services, whatsappHref } from "@/lib/site";
+import { RentalPackages } from "@/components/RentalPackages";
+import { cabServiceLocations, faqs, services, whatsappHref } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Airport, Corporate, Luxury & Minibus Taxis in Goa",
   description:
-    "Airport taxis for Dabolim and Mopa, corporate chauffeur cars, long-distance outstation taxis, luxury vehicles, and minibus hire from Quadri Taxi Service in South Goa. Fixed fares, 24/7 dispatch.",
+    "Cab services in Varca, Majorda, Betalbatim, Utorda, Cavelossim, Cabo de Rama, Mobor, Panaji, Colva, Benaulim, Calangute, Baga, Candolim, Arpora, Palolem, Madgaon, Dabolim Airport and Madgaon Railway Station.",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "Taxi services in South Goa | Quadri Taxi Service",
@@ -90,6 +91,35 @@ export default function ServicesPage() {
             </div>
           </article>
         ))}
+      </div>
+
+      <section id="cab-services" className="mt-20">
+        <p className="text-xs uppercase tracking-[0.3em] text-gold">Coverage</p>
+        <h2 className="mt-3 font-display text-4xl">Cab services</h2>
+        <p className="mt-4 max-w-2xl text-foam/70">
+          Private cabs for hotel pickups, airport drops, and local hops across these
+          Goa locations. Same 24/7 desk, Swift Dzire, Ertiga, or Innova Crysta.
+        </p>
+        <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {cabServiceLocations.map((place) => (
+            <li key={place}>
+              <a
+                href={whatsappHref(`Hello Quadri Taxi, I need a cab in ${place}.`)}
+                className="flex h-full items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 transition hover:border-gold/50 hover:bg-gold/5"
+              >
+                <span>
+                  <span className="block font-display text-xl">{place}</span>
+                  <span className="mt-1 block text-xs text-foam/50">Cab service · 24/7</span>
+                </span>
+                <span className="text-sm text-gold">Book →</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <div className="mt-20">
+        <RentalPackages />
       </div>
 
       <section className="mt-20">
