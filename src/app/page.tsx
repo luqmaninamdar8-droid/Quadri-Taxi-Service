@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { areas, faqs, howWeBook, reviews, services, site, tours, whatsappHref } from "@/lib/site";
 import { CtaBanner } from "@/components/CtaBanner";
+import { BookingForm } from "@/components/BookingForm";
+import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "24/7 Private Taxis & Holiday Tours in South Goa",
@@ -25,18 +27,19 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/55 to-ink" />
         <div className="grain pointer-events-none absolute inset-0 opacity-30 mix-blend-overlay" />
-        <div className="relative mx-auto flex min-h-[92vh] max-w-6xl flex-col justify-end px-4 pb-16 pt-28 md:px-6">
-          <p className="text-xs uppercase tracking-[0.35em] text-gold">Margao · South Goa</p>
-          <h1 className="mt-4 max-w-3xl font-display text-5xl leading-[1.05] text-foam md:text-7xl">
+        <div className="relative mx-auto grid min-h-[92vh] max-w-6xl items-center gap-10 px-4 pb-16 pt-28 lg:grid-cols-[1.05fr_0.95fr] md:px-6">
+          <div>
+          <p className="animate-fade-up text-xs uppercase tracking-[0.35em] text-gold">Margao · South Goa</p>
+          <h1 className="animate-fade-up delay-1 mt-4 max-w-3xl font-display text-4xl leading-[1.05] md:text-6xl lg:text-7xl">
             Private rides that feel like the rest of your Goa holiday.
           </h1>
-          <p className="mt-5 max-w-xl text-lg text-foam/75">
+          <p className="animate-fade-up delay-2 mt-5 max-w-xl text-lg text-foam/75">
             Quadri Taxi Service is a 24/7 private transportation and tour provider based
             at Gogol Housing Board, Margao. We run airport taxis, corporate cars, long-distance
             outstation trips, luxury vehicles, minibuses, and holiday itineraries written
             around your hotels and flight times — not a packed sightseeing bus.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="animate-fade-up delay-3 mt-8 flex flex-wrap gap-3">
             <a
               href={whatsappHref()}
               className="rounded-full bg-gold px-6 py-3 font-semibold text-ink hover:bg-sand"
@@ -50,7 +53,7 @@ export default function HomePage() {
               View services
             </Link>
           </div>
-          <dl className="mt-12 grid max-w-3xl grid-cols-3 gap-4 border-t border-white/10 pt-6 text-sm">
+          <dl className="animate-fade-up delay-4 mt-12 grid max-w-3xl grid-cols-3 gap-4 border-t border-white/10 pt-6 text-sm">
             <div>
               <dt className="text-foam/50">Hours</dt>
               <dd className="mt-1 font-medium text-gold">24/7 dispatch</dd>
@@ -61,12 +64,25 @@ export default function HomePage() {
             </div>
             <div>
               <dt className="text-foam/50">Fleet</dt>
-              <dd className="mt-1 font-medium">Sedan to minibus</dd>
+              <dd className="mt-1 font-medium leading-snug">
+                Swift Dzire / Baleno
+                <br />
+                Maruti Ertiga
+                <br />
+                Innova Crysta
+                <br />
+                Kia Carens
+              </dd>
             </div>
           </dl>
+          </div>
+          <div className="animate-slide-in-right delay-2 w-full">
+            <BookingForm compact />
+          </div>
         </div>
       </section>
 
+      <Reveal>
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">How booking works</p>
         <h2 className="mt-3 font-display text-4xl">Four messages. Then a car at the door.</h2>
@@ -76,7 +92,7 @@ export default function HomePage() {
         </p>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {howWeBook.map((item) => (
-            <article key={item.step} className="rounded-3xl border border-white/10 p-5">
+            <article key={item.step} className="motion-card rounded-3xl border border-white/10 p-5">
               <p className="text-xs tracking-[0.2em] text-gold">{item.step}</p>
               <h3 className="mt-3 font-display text-xl">{item.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-foam/65">{item.text}</p>
@@ -84,7 +100,9 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      </Reveal>
 
+      <Reveal>
       <section id="services" className="mx-auto max-w-6xl px-4 py-20 md:px-6">
         <div className="flex items-end justify-between gap-6">
           <div>
@@ -103,7 +121,7 @@ export default function HomePage() {
           {services.map((service, index) => (
             <article
               key={service.slug}
-              className={`group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] ${
+              className={`motion-card group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] ${
                 index === 0 ? "lg:col-span-2" : ""
               }`}
             >
@@ -128,7 +146,9 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      </Reveal>
 
+      <Reveal>
       <section className="relative overflow-hidden border-y border-white/10 bg-[#0a1a16] py-20">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 md:grid-cols-2 md:px-6">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
@@ -174,7 +194,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </Reveal>
 
+      <Reveal>
       <section className="mx-auto max-w-6xl px-4 py-20 md:px-6">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Holiday itineraries</p>
         <h2 className="mt-3 font-display text-4xl">Tours paced like a private driver, not a bus.</h2>
@@ -184,7 +206,7 @@ export default function HomePage() {
         </p>
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {tours.slice(0, 4).map((tour) => (
-            <article key={tour.title} className="rounded-3xl border border-white/10 p-6">
+            <article key={tour.title} className="motion-card rounded-3xl border border-white/10 p-6">
               <div className="flex items-baseline justify-between gap-4">
                 <h3 className="font-display text-2xl">{tour.title}</h3>
                 <span className="text-sm text-gold">{tour.duration}</span>
@@ -202,12 +224,14 @@ export default function HomePage() {
           Build a custom itinerary
         </Link>
       </section>
+      </Reveal>
 
+      <Reveal>
       <section className="mx-auto max-w-6xl px-4 pb-20 md:px-6">
         <h2 className="font-display text-4xl">Guests remember the car as much as the beach</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           {reviews.map((review) => (
-            <blockquote key={review.name} className="rounded-3xl bg-white/[0.04] p-6">
+            <blockquote key={review.name} className="motion-card rounded-3xl bg-white/[0.04] p-6">
               <p className="text-foam/80">“{review.quote}”</p>
               <footer className="mt-5 text-sm">
                 <cite className="not-italic text-gold">{review.name}</cite>
@@ -217,7 +241,9 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      </Reveal>
 
+      <Reveal>
       <section className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Coverage</p>
         <h2 className="mt-3 font-display text-4xl">Pickups across South Goa — and the rest of the map</h2>
@@ -236,14 +262,18 @@ export default function HomePage() {
           ))}
         </ul>
       </section>
+      </Reveal>
 
+      <Reveal>
       <section className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
         <CtaBanner
           title="Landing tonight? Send the flight number."
           text="We track Dabolim and Mopa arrivals, meet you with a name board, and quote a fixed fare to Colva, Palolem, Calangute, or anywhere you are sleeping."
         />
       </section>
+      </Reveal>
 
+      <Reveal>
       <section className="mx-auto max-w-6xl px-4 pb-24 md:px-6">
         <h2 className="font-display text-4xl">Questions before you land</h2>
         <div className="mt-8 divide-y divide-white/10 border-y border-white/10">
@@ -263,6 +293,7 @@ export default function HomePage() {
           Base: {site.address.line}
         </p>
       </section>
+      </Reveal>
     </>
   );
 }

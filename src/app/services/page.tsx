@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { RentalPackages } from "@/components/RentalPackages";
+import { Reveal } from "@/components/Reveal";
 import { cabServiceLocations, faqs, services, whatsappHref } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 md:px-6">
-      <p className="text-xs uppercase tracking-[0.3em] text-gold">Fleet & services</p>
-      <h1 className="mt-3 max-w-3xl font-display text-5xl">A car for every Goa plan</h1>
-      <p className="mt-4 max-w-2xl text-foam/70">
+      <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">Fleet & services</p>
+      <h1 className="animate-fade-up delay-1 mt-3 max-w-3xl font-display text-5xl">A car for every Goa plan</h1>
+      <p className="animate-fade-up delay-2 mt-4 max-w-2xl text-foam/70">
         From a solo airport sprint to a 17-seat family circuit, Quadri Taxi Service
         keeps the same 24/7 promise: a private vehicle, a known chauffeur, and a fare
         you agree before the engine starts.
@@ -39,7 +40,7 @@ export default function ServicesPage() {
           { k: "Local", v: "Margao, Colva, Palolem, Panaji, Calangute" },
           { k: "Outstation", v: "Pune, Mumbai, Hampi, Gokarna, Belagavi" },
         ].map((item) => (
-          <div key={item.k} className="rounded-2xl border border-white/10 p-5">
+          <div key={item.k} className="motion-card rounded-2xl border border-white/10 p-5">
             <p className="text-xs uppercase tracking-[0.2em] text-gold">{item.k}</p>
             <p className="mt-2 text-sm text-foam/75">{item.v}</p>
           </div>
@@ -48,9 +49,9 @@ export default function ServicesPage() {
 
       <div className="mt-16 grid gap-16">
         {services.map((service, index) => (
+          <Reveal key={service.slug}>
           <article
             id={service.slug}
-            key={service.slug}
             className="scroll-mt-28 grid items-center gap-8 md:grid-cols-2"
           >
             <div className={`relative aspect-[16/11] overflow-hidden rounded-[2rem] ${index % 2 ? "md:order-2" : ""}`}>
@@ -90,22 +91,24 @@ export default function ServicesPage() {
               </a>
             </div>
           </article>
+          </Reveal>
         ))}
       </div>
 
+      <Reveal>
       <section id="cab-services" className="mt-20">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Coverage</p>
         <h2 className="mt-3 font-display text-4xl">Cab services</h2>
         <p className="mt-4 max-w-2xl text-foam/70">
           Private cabs for hotel pickups, airport drops, and local hops across these
-          Goa locations. Same 24/7 desk, Swift Dzire, Ertiga, or Innova Crysta.
+          Goa locations. Same 24/7 desk, Swift Dzire, Baleno, Ertiga, Innova Crysta, or Kia Carens.
         </p>
         <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {cabServiceLocations.map((place) => (
             <li key={place}>
               <a
                 href={whatsappHref(`Hello Quadri Taxi, I need a cab in ${place}.`)}
-                className="flex h-full items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 transition hover:border-gold/50 hover:bg-gold/5"
+                className="motion-card flex h-full items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 hover:bg-gold/5"
               >
                 <span>
                   <span className="block font-display text-xl">{place}</span>
@@ -117,11 +120,15 @@ export default function ServicesPage() {
           ))}
         </ul>
       </section>
+      </Reveal>
 
+      <Reveal>
       <div className="mt-20">
         <RentalPackages />
       </div>
+      </Reveal>
 
+      <Reveal>
       <section className="mt-20">
         <h2 className="font-display text-4xl">What stays the same on every booking</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -139,14 +146,16 @@ export default function ServicesPage() {
               d: "Night landings, early temple runs, and feast-day minibuses all go through one WhatsApp and phone number.",
             },
           ].map((item) => (
-            <article key={item.t} className="rounded-3xl border border-white/10 p-6">
+            <article key={item.t} className="motion-card rounded-3xl border border-white/10 p-6">
               <h3 className="font-display text-2xl">{item.t}</h3>
               <p className="mt-3 text-sm leading-relaxed text-foam/65">{item.d}</p>
             </article>
           ))}
         </div>
       </section>
+      </Reveal>
 
+      <Reveal>
       <section className="mt-16">
         <h2 className="font-display text-3xl">Service questions</h2>
         <div className="mt-6 divide-y divide-white/10 border-y border-white/10">
@@ -166,13 +175,16 @@ export default function ServicesPage() {
           Need a mixed fleet for a wedding weekend? →
         </Link>
       </section>
+      </Reveal>
 
+      <Reveal>
       <div className="mt-16">
         <CtaBanner
           title="Tell us the route. We will name the car."
           text="Sedan for two, Innova for a family, minibus for a parish group — reply with people, bags, and timing and we match the fleet."
         />
       </div>
+      </Reveal>
     </div>
   );
 }

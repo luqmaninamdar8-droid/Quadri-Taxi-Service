@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
+import { Reveal } from "@/components/Reveal";
 import { areas, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -14,8 +15,8 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 md:px-6">
-      <p className="text-xs uppercase tracking-[0.3em] text-gold">About</p>
-      <h1 className="mt-3 max-w-3xl font-display text-5xl">A South Goa taxi desk that still answers the phone at 3am</h1>
+      <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">About</p>
+      <h1 className="animate-fade-up delay-1 mt-3 max-w-3xl font-display text-5xl">A South Goa taxi desk that still answers the phone at 3am</h1>
       <div className="mt-10 grid items-start gap-10 md:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-5 text-foam/75 leading-relaxed">
           <p>
@@ -46,6 +47,7 @@ export default function AboutPage() {
             src="/images/church.jpg"
             alt="Old Goa church façade under tropical trees"
             fill
+            priority
             className="object-cover"
             sizes="(min-width: 768px) 40vw, 100vw"
           />
@@ -67,6 +69,7 @@ export default function AboutPage() {
         </div>
       </dl>
 
+      <Reveal>
       <section className="mt-16">
         <h2 className="font-display text-4xl">What we will not do</h2>
         <p className="mt-4 max-w-2xl text-foam/70">
@@ -89,14 +92,16 @@ export default function AboutPage() {
               d: "You know the vehicle type before pickup. If we must upgrade or substitute, we tell you first.",
             },
           ].map((item) => (
-            <article key={item.t} className="rounded-3xl bg-white/[0.04] p-6">
+            <article key={item.t} className="motion-card rounded-3xl bg-white/[0.04] p-6">
               <h3 className="font-display text-2xl">{item.t}</h3>
               <p className="mt-3 text-sm leading-relaxed text-foam/65">{item.d}</p>
             </article>
           ))}
         </div>
       </section>
+      </Reveal>
 
+      <Reveal>
       <section className="mt-16">
         <h2 className="font-display text-4xl">Where the cars actually go</h2>
         <p className="mt-4 max-w-2xl text-foam/70">
@@ -116,7 +121,9 @@ export default function AboutPage() {
           accounts. Child seats on request.
         </p>
       </section>
+      </Reveal>
 
+      <Reveal>
       <section className="mt-16 grid gap-8 md:grid-cols-2">
         <div className="relative min-h-[280px] overflow-hidden rounded-[2rem]">
           <Image
@@ -140,13 +147,16 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+      </Reveal>
 
+      <Reveal>
       <div className="mt-16">
         <CtaBanner
           title="Need a chauffeur who already knows South Goa?"
           text="Send dates, passenger count, and whether this is an airport, a wedding, or a slow holiday car. We reply with a vehicle and a fare."
         />
       </div>
+      </Reveal>
     </div>
   );
 }

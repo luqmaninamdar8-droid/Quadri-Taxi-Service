@@ -49,7 +49,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-foam/45">
-        © {new Date().getFullYear()} {site.name}. Private taxis across Goa.
+        © 2026 {site.name}. Private taxis across Goa.
       </div>
     </footer>
   );

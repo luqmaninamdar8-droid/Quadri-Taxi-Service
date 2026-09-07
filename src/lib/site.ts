@@ -7,7 +7,7 @@ export const site = {
   url: "https://quadritaxiservice.in",
   phone: "917875333539",
   phoneDisplay: "+91 78753 33539",
-  email: "bookings@quadritaxiservice.in",
+  email: "jabirbagewadi32@gmail.com",
   hours: "Open 24 hours, every day",
   address: {
     line: "Gogol Housing Board, Margao, Goa 403601",
@@ -270,7 +270,7 @@ export const pickupTips = [
   "Name, WhatsApp number, and pickup pin or hotel name",
   "Date, time, and whether it is 24-hour clock local time (IST)",
   "Passenger count, child seats, and oversized luggage",
-  "Preferred vehicle: Swift Dzire, Innova Crysta, or Ertiga",
+  "Preferred vehicle: Swift Dzire, Baleno, Maruti Ertiga, Innova Crysta, or Kia Carens",
   "Flight / train number for airport and station pickups",
   "Preferred language: English, Hindi, Marathi, or Konkani",
 ];
@@ -285,12 +285,12 @@ export const fleet = [
     blurb: "Airport hops and couples — compact AC sedan with a roof rack for extra bags.",
   },
   {
-    id: "innova-crysta",
-    name: "Innova Crysta",
-    tag: "Premium SUV",
-    seats: "6–7 passengers",
-    image: "/images/innova-crysta.png",
-    blurb: "The most requested car for airports, weddings, and long-distance comfort.",
+    id: "baleno",
+    name: "Baleno",
+    tag: "Hatchback",
+    seats: "4 passengers",
+    image: "/images/baleno.jpeg",
+    blurb: "A compact city hatch for two or three with light luggage — easy on South Goa lanes.",
   },
   {
     id: "ertiga",
@@ -299,6 +299,22 @@ export const fleet = [
     seats: "6 passengers",
     image: "/images/ertiga.jpeg",
     blurb: "Families and small groups — 6-seater with a luggage carrier for South Goa and outstation runs.",
+  },
+  {
+    id: "innova-crysta",
+    name: "Innova Crysta",
+    tag: "Premium SUV",
+    seats: "6–7 passengers",
+    image: "/images/innova-crysta.png",
+    blurb: "The most requested car for airports, weddings, and long-distance comfort.",
+  },
+  {
+    id: "kia-carens",
+    name: "Kia Carens",
+    tag: "MPV",
+    seats: "6–7 passengers",
+    image: "/images/kia-carens.jpeg",
+    blurb: "A roomy 6–7 seater for families, airport groups, and longer Goa days.",
   },
 ];
 
@@ -326,6 +342,30 @@ export const reviews = [
     place: "Hyderabad · family of six",
     quote:
       "Kept one Innova for four days from Gogol. Church feast timing, market stops, and a late Mopa drop — all on one chat thread.",
+  },
+  {
+    name: "Daniel P.",
+    place: "Berlin · Colva hotel",
+    quote:
+      "Dabolim pickup in a Baleno, then a Cabo de Rama day. Driver knew the parking, we never waited in the sun.",
+  },
+  {
+    name: "Meera S.",
+    place: "Mumbai · Calangute",
+    quote:
+      "Booked a Kia Carens for parents and two kids. Extra bags, Baga in the evening, drop at the hotel porch. Easy WhatsApp booking.",
+  },
+  {
+    name: "Joseph D'Souza",
+    place: "Margao · family visit",
+    quote:
+      "Station pickup at Madgaon, then Varca and back. Spoke Konkani, fair timing, car was clean.",
+  },
+  {
+    name: "Priya & Arjun",
+    place: "Bengaluru · Palolem",
+    quote:
+      "Eight-hour rental, Palolem to Agonda. Swift Dzire was enough for two. They confirmed the fare before we sat down.",
   },
 ];
 

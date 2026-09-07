@@ -22,7 +22,7 @@ export default function OpenGraphImage() {
         }}
       >
         <div style={{ display: "flex", fontSize: 22, letterSpacing: 6, color: "#e4b15a" }}>
-          MARGAO · DAVORLIM · SOUTH GOA
+          MARGAO · SOUTH GOA
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.05 }}>{site.name}</div>
