@@ -22,8 +22,8 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Quadri Taxi Service | 24/7 Taxis & Tours in South Goa",
-    template: "%s | Quadri Taxi Service",
+    default: "Quadri Cabs | 24/7 Taxis & Tours in South Goa",
+    template: "%s | Quadri Cabs",
   },
   description: site.description,
   keywords: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Dabolim airport taxi",
     "Mopa airport taxi",
     "Goa private cab",
-    "Quadri Taxi Service",
+    "Quadri Cabs",
     "Goa tour itinerary",
     "luxury taxi Goa",
     "minibus hire Goa",
@@ -42,13 +42,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: site.name,
-    title: "Quadri Taxi Service | 24/7 Taxis & Tours in South Goa",
+    title: "Quadri Cabs | 24/7 Taxis & Tours in South Goa",
     description: site.description,
     url: site.url,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quadri Taxi Service | South Goa",
+    title: "Quadri Cabs | South Goa",
     description: site.tagline,
   },
   robots: {

@@ -183,7 +183,7 @@ export function BookingForm({ compact = false }: { compact?: boolean }) {
                 ["swift-dzire", "ertiga", "innova-crysta", "baleno", "kia-carens"].includes(car.id) ? (
                 <Image
                   src={car.image}
-                  alt={`${car.name} — ${car.tag} for Quadri Taxi Service`}
+                  alt={`${car.name} — ${car.tag} for Quadri Cabs`}
                   width={1600}
                   height={1600}
                   className="h-auto w-full object-contain"

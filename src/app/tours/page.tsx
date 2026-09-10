@@ -8,7 +8,7 @@ import { tours, whatsappHref } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Private Goa Holiday Itineraries & Day Tours",
   description:
-    "Private Goa holiday itineraries, day tours, and rental packages from 1 Hour 10 km to 12 Hours 120 km with Quadri Taxi Service.",
+    "Private Goa holiday itineraries, day tours, and rental packages from 1 Hour 10 km to 12 Hours 120 km with Quadri Cabs.",
   alternates: { canonical: "/tours" },
 };
 

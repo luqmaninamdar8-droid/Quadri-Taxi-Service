@@ -7,7 +7,7 @@ import { areas, faqs, pickupTips, site, telHref } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact & Book a Taxi in Margao, Goa",
   description:
-    "Contact Quadri Taxi Service at Gogol Housing Board, Margao, Goa 403601. Book 24/7 airport taxis, tours, luxury cars, and minibuses. Map, WhatsApp, and booking form included.",
+    "Contact Quadri Cabs at Gogol Housing Board, Margao, Goa 403601. Book 24/7 airport taxis, tours, luxury cars, and minibuses. Map, WhatsApp, and booking form included.",
   alternates: { canonical: "/contact" },
 };
 
@@ -30,7 +30,7 @@ export default function ContactPage() {
       <div className="mt-12 grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-6">
           <div className="motion-card rounded-3xl border border-white/10 p-6">
-            <h2 className="title-rainbow font-display text-2xl">Quadri Taxi Service</h2>
+            <h2 className="title-rainbow font-display text-2xl">Quadri Cabs</h2>
             <address className="mt-3 not-italic leading-relaxed text-foam/75">
               {site.address.line}
             </address>
@@ -65,13 +65,13 @@ export default function ContactPage() {
           </div>
         </div>
         <div>
-          <h2 className="title-rainbow font-display text-2xl">Map of Quadri Taxi Service</h2>
+          <h2 className="title-rainbow font-display text-2xl">Map of Quadri Cabs</h2>
           <p className="mt-2 mb-4 text-sm text-foam/60">
             Pin centred on Gogol Housing Board, Margao — our South Goa base.
           </p>
           <div className="overflow-hidden rounded-[2rem] border border-white/10">
             <iframe
-              title="Map of Quadri Taxi Service, Gogol Housing Board, Margao, Goa"
+              title="Map of Quadri Cabs, Gogol Housing Board, Margao, Goa"
               src={site.mapEmbed}
               className="h-[520px] w-full grayscale-[0.2] contrast-[1.05]"
               loading="lazy"

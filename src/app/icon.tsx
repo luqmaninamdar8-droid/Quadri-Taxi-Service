@@ -13,10 +13,12 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#e4b15a",
-          color: "#071310",
+          background: "#0a1c16",
+          color: "#e4b15a",
+          borderRadius: 8,
           fontSize: 20,
           fontWeight: 700,
+          position: "relative",
         }}
       >
         Q

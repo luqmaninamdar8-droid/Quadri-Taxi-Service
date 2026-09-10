@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Cab services in Varca, Majorda, Betalbatim, Utorda, Cavelossim, Cabo de Rama, Mobor, Panaji, Colva, Benaulim, Calangute, Baga, Candolim, Arpora, Palolem, Madgaon, Dabolim Airport and Madgaon Railway Station.",
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Taxi services in South Goa | Quadri Taxi Service",
+    title: "Taxi services in South Goa | Quadri Cabs",
     description:
       "Private airport transfers, corporate cars, long-distance taxis, luxury vehicles, and minibuses.",
   },
@@ -24,7 +24,7 @@ export default function ServicesPage() {
       <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">Fleet & services</p>
       <h1 className="title-rainbow animate-fade-up delay-1 mt-3 max-w-3xl font-display text-5xl">A car for every Goa plan</h1>
       <p className="animate-fade-up delay-2 mt-4 max-w-2xl text-foam/70">
-        From a solo airport sprint to a 17-seat family circuit, Quadri Taxi Service
+        From a solo airport sprint to a 17-seat family circuit, Quadri Cabs
         keeps the same 24/7 promise: a private vehicle, a known chauffeur, and a fare
         you agree before the engine starts.
       </p>
@@ -84,7 +84,7 @@ export default function ServicesPage() {
                 ))}
               </ul>
               <a
-                href={whatsappHref(`Hello Quadri Taxi, I want to book: ${service.title}.`)}
+                href={whatsappHref(`Hello Quadri Cabs, I want to book: ${service.title}.`)}
                 className="mt-8 inline-block rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-ink"
               >
                 Book {service.title.toLowerCase()}
@@ -107,7 +107,7 @@ export default function ServicesPage() {
           {cabServiceLocations.map((place) => (
             <li key={place}>
               <a
-                href={whatsappHref(`Hello Quadri Taxi, I need a cab in ${place}.`)}
+                href={whatsappHref(`Hello Quadri Cabs, I need a cab in ${place}.`)}
                 className="motion-card flex h-full items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 hover:bg-gold/5"
               >
                 <span>

@@ -6,9 +6,9 @@ import { Reveal } from "@/components/Reveal";
 import { areas, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About Quadri Taxi Service in South Goa",
+  title: "About Quadri Cabs in South Goa",
   description:
-    "Meet Quadri Taxi Service — a 24/7 private transportation and tour provider based at Gogol Housing Board, Margao, Goa 403601. Local commutes, outstation travel, and tailored holidays.",
+    "Meet Quadri Cabs — a 24/7 private transportation and tour provider based at Gogol Housing Board, Margao, Goa 403601. Local commutes, outstation travel, and tailored holidays.",
   alternates: { canonical: "/about" },
 };
 
@@ -20,7 +20,7 @@ export default function AboutPage() {
       <div className="mt-10 grid items-start gap-10 md:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-5 text-foam/75 leading-relaxed">
           <p>
-            Quadri Taxi Service is a 24/7 private transportation and tour provider based
+            Quadri Cabs is a 24/7 private transportation and tour provider based
             in South Goa. We exist for the unglamorous moments that make a holiday work:
             the delayed Mopa landing, the wedding guest list that grew overnight, the
             grandparents who would rather not change cars three times.

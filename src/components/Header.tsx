@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { Logo } from "@/components/Logo";
 import { nav, site, telHref, whatsappHref } from "@/lib/site";
 
 export function Header() {
@@ -12,27 +13,8 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#071310]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-6">
-        <Link href="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="grid h-11 w-11 place-items-center rounded-2xl bg-gradient-to-br from-gold to-gold-deep text-ink shadow-[0_0_24px_rgba(228,177,90,0.35)]">
-            <svg viewBox="0 0 32 32" className="h-6 w-6" fill="none" aria-hidden>
-              <path
-                d="M6 20h20l-1.6-6.2A3 3 0 0 0 21.5 11H10.5a3 3 0 0 0-2.9 2.8L6 20Z"
-                stroke="currentColor"
-                strokeWidth="1.8"
-              />
-              <circle cx="10" cy="22.5" r="2" fill="currentColor" />
-              <circle cx="22" cy="22.5" r="2" fill="currentColor" />
-              <path d="M11 11V8.5A2.5 2.5 0 0 1 13.5 6h5A2.5 2.5 0 0 1 21 8.5V11" stroke="currentColor" strokeWidth="1.8" />
-            </svg>
-          </span>
-          <span>
-            <span className="title-rainbow block font-display text-lg leading-none tracking-tight">
-              Quadri Taxi
-            </span>
-            <span className="mt-1 block text-[11px] uppercase tracking-[0.22em] text-foam/55">
-              South Goa · 24/7
-            </span>
-          </span>
+        <Link href="/" className="group" onClick={() => setOpen(false)}>
+          <Logo />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">

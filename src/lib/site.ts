@@ -1,9 +1,9 @@
 export const site = {
-  name: "Quadri Taxi Service",
-  shortName: "Quadri Taxi",
+  name: "Quadri Cabs",
+  shortName: "Quadri Cabs",
   tagline: "South Goa’s 24/7 private rides, airport transfers & tailored tours",
   description:
-    "Quadri Taxi Service is a 24/7 private transportation and tour provider based in South Goa. We handle local commutes, outstation travel, and tailored holiday itineraries with airport taxis, corporate cars, luxury vehicles, and minibuses.",
+    "Quadri Cabs is a 24/7 private transportation and tour provider based in South Goa. We handle local commutes, outstation travel, and tailored holiday itineraries with airport taxis, corporate cars, luxury vehicles, and minibuses.",
   url: "https://quadritaxiservice.in",
   phone: "917875333539",
   phoneDisplay: "+91 78753 33539",
@@ -163,7 +163,7 @@ export const tours = [
 export const faqs = [
   {
     q: "Do you operate 24/7 in South Goa?",
-    a: "Yes. Quadri Taxi Service runs round the clock for airport landings, late-night hotel transfers, and early outstation departures.",
+    a: "Yes. Quadri Cabs runs round the clock for airport landings, late-night hotel transfers, and early outstation departures.",
   },
   {
     q: "Which airports do you cover?",
@@ -372,7 +372,7 @@ export const reviews = [
 export function whatsappHref(text?: string) {
   const message =
     text ??
-    "Hello Quadri Taxi Service, I would like to book a taxi in Goa.";
+    "Hello Quadri Cabs, I would like to book a taxi in Goa.";
   return `https://wa.me/${site.phone}?text=${encodeURIComponent(message)}`;
 }
 

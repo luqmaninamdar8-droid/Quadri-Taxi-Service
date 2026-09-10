@@ -13,7 +13,7 @@ export function RentalPackages() {
         {rentalPackages.map((pkg) => (
           <li key={pkg.hours}>
             <a
-              href={whatsappHref(`Hello Quadri Taxi, I want the rental package: ${pkg.label}.`)}
+              href={whatsappHref(`Hello Quadri Cabs, I want the rental package: ${pkg.label}.`)}
               className="motion-card flex h-full items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 hover:bg-gold/5"
             >
               <span>

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { site } from "@/lib/site";
 
 export const runtime = "nodejs";
-export const alt = "Quadri Taxi Service — 24/7 private taxis in South Goa";
+export const alt = "Quadri Cabs — 24/7 private taxis in South Goa";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -21,8 +21,27 @@ export default function OpenGraphImage() {
           padding: 64,
         }}
       >
-        <div style={{ display: "flex", fontSize: 22, letterSpacing: 6, color: "#e4b15a" }}>
-          MARGAO · SOUTH GOA
+        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+          <div
+            style={{
+              width: 72,
+              height: 72,
+              borderRadius: 20,
+              background: "#0a1c16",
+              border: "2px solid rgba(228,177,90,0.35)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "#e4b15a",
+              fontSize: 42,
+              fontWeight: 700,
+            }}
+          >
+            Q
+          </div>
+          <div style={{ display: "flex", fontSize: 22, letterSpacing: 6, color: "#e4b15a" }}>
+            MARGAO · SOUTH GOA
+          </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.05 }}>{site.name}</div>

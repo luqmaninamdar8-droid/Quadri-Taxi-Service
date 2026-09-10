@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/components/Logo";
 import { nav, site, telHref, whatsappHref } from "@/lib/site";
 
 export function Footer() {
@@ -7,9 +8,7 @@ export function Footer() {
       <div className="pointer-events-none absolute -left-24 top-0 h-64 w-64 rounded-full bg-lagoon/40 blur-3xl" />
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-4 md:px-6">
         <div className="md:col-span-2">
-          <p className="title-rainbow font-display text-2xl">
-            Quadri Taxi Service
-          </p>
+          <Logo />
           <p className="mt-3 max-w-md text-sm leading-relaxed text-foam/65">
             24/7 private transportation and tour provider based in South Goa —
             local commutes, outstation travel, and tailored holiday itineraries.

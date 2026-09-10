@@ -9,7 +9,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "24/7 Private Taxis & Holiday Tours in South Goa",
   description:
-    "Book Quadri Taxi Service for airport pickups, corporate cars, luxury vehicles, minibuses, long-distance travel, and custom Goa holiday itineraries. Based in Margao, Goa.",
+    "Book Quadri Cabs for airport pickups, corporate cars, luxury vehicles, minibuses, long-distance travel, and custom Goa holiday itineraries. Based in Margao, Goa.",
   alternates: { canonical: "/" },
 };
 
@@ -34,7 +34,7 @@ export default function HomePage() {
             Private rides that feel like the rest of your Goa holiday.
           </h1>
           <p className="animate-fade-up delay-2 mt-5 max-w-xl text-lg text-foam/75">
-            Quadri Taxi Service is a 24/7 private transportation and tour provider based
+            Quadri Cabs is a 24/7 private transportation and tour provider based
             at Gogol Housing Board, Margao. We run airport taxis, corporate cars, long-distance
             outstation trips, luxury vehicles, minibuses, and holiday itineraries written
             around your hotels and flight times — not a packed sightseeing bus.
