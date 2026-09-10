@@ -8,7 +8,7 @@ import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const GA_ID = "G-H99RLL3X48";
+const GA_IDS = ["G-H99RLL3X48", "G-DDW2NLQTDG"] as const;
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -67,13 +67,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-IN" data-scroll-behavior="smooth">
       <body className={`${fraunces.variable} ${outfit.variable} antialiased`}>
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_IDS[0]}`} strategy="afterInteractive" />
         <Script id="google-gtag" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_ID}');
+            ${GA_IDS.map((id) => `gtag('config', '${id}');`).join("\n            ")}
           `}
         </Script>
         <JsonLd />
