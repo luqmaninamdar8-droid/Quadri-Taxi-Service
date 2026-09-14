@@ -13,7 +13,7 @@ export function RentalPackageForm({
   onPackageChange?: (label: string) => void;
 }) {
   const [vehicleId, setVehicleId] = useState(fleet[0].id);
-  const [internalPackage, setInternalPackage] = useState(rentalPackages[3].label);
+  const [internalPackage, setInternalPackage] = useState<string>(rentalPackages[3].label);
   const packageLabel = selectedPackage ?? internalPackage;
   const selected = fleet.find((car) => car.id === vehicleId) ?? fleet[0];
 

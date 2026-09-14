@@ -5,7 +5,7 @@ import { RentalPackageForm } from "@/components/RentalPackageForm";
 import { rentalPackages } from "@/lib/site";
 
 export function RentalPackages() {
-  const [selectedPackage, setSelectedPackage] = useState(rentalPackages[3].label);
+  const [selectedPackage, setSelectedPackage] = useState<string>(rentalPackages[3].label);
 
   function choosePackage(label: string) {
     setSelectedPackage(label);
