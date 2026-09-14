@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BookingForm } from "@/components/BookingForm";
+import { RentalPackageForm } from "@/components/RentalPackageForm";
 import { CtaBanner } from "@/components/CtaBanner";
 import { Reveal } from "@/components/Reveal";
 import { areas, faqs, pickupTips, site, telHref } from "@/lib/site";
@@ -85,6 +86,12 @@ export default function ContactPage() {
       <Reveal>
       <section className="mt-16">
         <BookingForm />
+      </section>
+      </Reveal>
+
+      <Reveal>
+      <section className="mt-16 max-w-xl">
+        <RentalPackageForm />
       </section>
       </Reveal>
 

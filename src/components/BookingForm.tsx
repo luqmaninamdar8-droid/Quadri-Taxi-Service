@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FormEvent, useState } from "react";
-import { cabServiceLocations, fleet, rentalPackages, whatsappHref } from "@/lib/site";
+import { cabServiceLocations, fleet, whatsappHref } from "@/lib/site";
 
 export function BookingForm({ compact = false }: { compact?: boolean }) {
   const [vehicleId, setVehicleId] = useState(fleet[0].id);
@@ -16,9 +16,9 @@ export function BookingForm({ compact = false }: { compact?: boolean }) {
     const service = String(data.get("service") || "");
     const when = String(data.get("when") || "");
     const pickup = String(data.get("pickup") || "");
-    const packageLabel = String(data.get("package") || "");
+    const drop = String(data.get("drop") || "");
     const notes = String(data.get("notes") || "");
-    const text = `Booking request from ${name} (${phone}). Service: ${service}. Vehicle: ${selected.name} (${selected.seats}). Pickup address: ${pickup}. Rental package: ${packageLabel}. Date/time: ${when}. Notes: ${notes}`;
+    const text = `Booking request from ${name} (${phone}). Service: ${service}. Vehicle: ${selected.name} (${selected.seats}). Pickup: ${pickup}. Drop: ${drop}. Date/time: ${when}. Notes: ${notes}`;
     window.open(whatsappHref(text), "_blank", "noopener,noreferrer");
   }
 
@@ -32,7 +32,7 @@ export function BookingForm({ compact = false }: { compact?: boolean }) {
         <h2 className="title-rainbow font-display text-2xl">Book a car</h2>
         <p className="text-sm text-foam/60">
           {compact
-            ? "Share pickup details. We reply with a fixed fare on WhatsApp."
+            ? "Airport, one-way, or a custom trip. We reply with a fixed fare on WhatsApp."
             : "Select a vehicle below or tap a car on the right. We reply with a fixed fare."}
         </p>
         <div className="grid gap-4 sm:grid-cols-2">
@@ -69,7 +69,6 @@ export function BookingForm({ compact = false }: { compact?: boolean }) {
             <option>Luxury vehicles</option>
             <option>Minibus taxi</option>
             <option>Custom holiday itinerary</option>
-            <option>Rental package</option>
           </select>
         </label>
         <label className="grid gap-2 text-sm">
@@ -88,45 +87,45 @@ export function BookingForm({ compact = false }: { compact?: boolean }) {
           </select>
         </label>
         </div>
-        <div className={`grid gap-4 ${compact ? "sm:grid-cols-2" : ""}`}>
-        <label className="grid gap-2 text-sm">
-          Pickup address
-          <select
-            required
-            name="pickup"
-            className="rounded-xl border border-white/10 bg-[#0c1c18] px-4 py-3 outline-none ring-gold/40 focus:ring-2"
-            defaultValue=""
-          >
-            <option value="" disabled>
-              Select pickup location
-            </option>
-            {cabServiceLocations.map((place) => (
-              <option key={place} value={place}>
-                {place}
+        <div className="grid gap-4 sm:grid-cols-2">
+          <label className="grid gap-2 text-sm">
+            Pickup location
+            <select
+              required
+              name="pickup"
+              className="rounded-xl border border-white/10 bg-[#0c1c18] px-4 py-3 outline-none ring-gold/40 focus:ring-2"
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select pickup location
               </option>
-            ))}
-            <option value="Other">Other (add in notes)</option>
-          </select>
-        </label>
-        <label className="grid gap-2 text-sm">
-          Rental package
-          <select
-            required
-            name="package"
-            className="rounded-xl border border-white/10 bg-[#0c1c18] px-4 py-3 outline-none ring-gold/40 focus:ring-2"
-            defaultValue=""
-          >
-            <option value="" disabled>
-              Select package
-            </option>
-            <option value="No package — airport / one-way">No package — airport / one-way</option>
-            {rentalPackages.map((pkg) => (
-              <option key={pkg.hours} value={pkg.label}>
-                {pkg.label}
+              {cabServiceLocations.map((place) => (
+                <option key={place} value={place}>
+                  {place}
+                </option>
+              ))}
+              <option value="Other">Other (add in notes)</option>
+            </select>
+          </label>
+          <label className="grid gap-2 text-sm">
+            Drop location
+            <select
+              required
+              name="drop"
+              className="rounded-xl border border-white/10 bg-[#0c1c18] px-4 py-3 outline-none ring-gold/40 focus:ring-2"
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select drop location
               </option>
-            ))}
-          </select>
-        </label>
+              {cabServiceLocations.map((place) => (
+                <option key={place} value={place}>
+                  {place}
+                </option>
+              ))}
+              <option value="Other">Other (add in notes)</option>
+            </select>
+          </label>
         </div>
         <label className="grid gap-2 text-sm">
           Pickup date & time

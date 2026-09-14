@@ -4,6 +4,7 @@ import Link from "next/link";
 import { areas, faqs, howWeBook, reviews, services, site, tours, whatsappHref } from "@/lib/site";
 import { CtaBanner } from "@/components/CtaBanner";
 import { BookingForm } from "@/components/BookingForm";
+import { RentalPackageForm } from "@/components/RentalPackageForm";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
@@ -46,12 +47,12 @@ export default function HomePage() {
             >
               Book a car now
             </a>
-            <Link
-              href="/services"
+            <a
+              href="#rental-form"
               className="rounded-full border border-white/20 px-6 py-3 text-foam hover:border-gold"
             >
-              View services
-            </Link>
+              Book a rental package
+            </a>
           </div>
           <dl className="animate-fade-up delay-4 mt-12 grid max-w-3xl grid-cols-3 gap-4 border-t border-white/10 pt-6 text-sm">
             <div>
@@ -84,11 +85,12 @@ export default function HomePage() {
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Packages & booking</p>
         <h2 className="title-rainbow mt-3 font-display text-4xl">Book a car or an hourly package</h2>
         <p className="mt-4 max-w-2xl text-foam/65">
-          Share pickup details and a rental package if you need one. We reply with a
-          fixed fare on WhatsApp.
+          Use the car form for airport and one-way trips. Use the rental form for
+          hourly hire with a kilometre limit. We reply with a fixed fare on WhatsApp.
         </p>
-        <div className="animate-slide-in-right delay-1 mt-10 max-w-xl">
+        <div className="animate-slide-in-right delay-1 mt-10 grid items-start gap-8 lg:grid-cols-2">
           <BookingForm compact />
+          <RentalPackageForm compact />
         </div>
       </section>
       </Reveal>
