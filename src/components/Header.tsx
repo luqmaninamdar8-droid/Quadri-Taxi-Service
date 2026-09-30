@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Logo } from "@/components/Logo";
-import { nav, site, telHref, whatsappHref } from "@/lib/site";
+import { nav, telHref, whatsappHref } from "@/lib/site";
 
 export function Header() {
   const pathname = usePathname();
@@ -12,8 +12,8 @@ export function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#071310]/80 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-6">
-        <Link href="/" className="group" onClick={() => setOpen(false)}>
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-3 py-3 sm:gap-4 sm:px-4 md:px-6">
+        <Link href="/" className="group min-w-0" onClick={() => setOpen(false)}>
           <Logo />
         </Link>
 
@@ -36,7 +36,7 @@ export function Header() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-2 sm:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           <a
             href={telHref()}
             className="rounded-full border border-white/15 px-4 py-2 text-sm text-foam/90 hover:border-gold/50 hover:text-gold"
@@ -53,7 +53,7 @@ export function Header() {
 
         <button
           type="button"
-          className="grid h-11 w-11 place-items-center rounded-xl border border-white/15 lg:hidden"
+          className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-white/15 lg:hidden"
           aria-expanded={open}
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
@@ -68,7 +68,7 @@ export function Header() {
       </div>
 
       {open ? (
-        <div className="border-t border-white/10 bg-ink px-4 py-4 lg:hidden">
+        <div className="max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-t border-white/10 bg-ink px-4 py-4 lg:hidden">
           <nav className="grid gap-1" aria-label="Mobile">
             {nav.map((item) => (
               <Link
@@ -83,7 +83,7 @@ export function Header() {
           </nav>
           <div className="mt-3 grid grid-cols-2 gap-2">
             <a href={telHref()} className="rounded-xl border border-white/15 py-3 text-center text-sm">
-              Call {site.phoneDisplay}
+              Call
             </a>
             <a href={whatsappHref()} className="rounded-xl bg-gold py-3 text-center text-sm font-semibold text-ink">
               WhatsApp

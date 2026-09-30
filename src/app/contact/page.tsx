@@ -16,7 +16,7 @@ export default function ContactPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 md:px-6">
       <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">Contact</p>
-      <h1 className="title-rainbow animate-fade-up delay-1 mt-3 font-display text-5xl">Find us in Margao — or let us find you at the airport</h1>
+      <h1 className="title-rainbow animate-fade-up delay-1 mt-3 font-display text-3xl leading-tight sm:text-4xl md:text-5xl">Find us in Margao — or let us find you at the airport</h1>
       <p className="animate-fade-up delay-2 mt-4 max-w-2xl text-foam/70">
         Dispatch is awake all night. Share your flight, hotel, or itinerary and we
         confirm a vehicle within minutes. Most bookings start on WhatsApp; the form
@@ -30,7 +30,7 @@ export default function ContactPage() {
 
       <div className="mt-12 grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-6">
-          <div className="motion-card rounded-3xl border border-white/10 p-6">
+          <div className="motion-card rounded-3xl border border-white/10 p-5 pr-20 sm:p-6 lg:pr-6">
             <h2 className="title-rainbow font-display text-2xl">Quadri Cabs</h2>
             <address className="mt-3 not-italic leading-relaxed text-foam/75">
               {site.address.line}
@@ -40,7 +40,7 @@ export default function ContactPage() {
               <a href={telHref()} className="text-gold hover:underline">
                 {site.phoneDisplay}
               </a>
-              <a href={`mailto:${site.email}`} className="text-gold hover:underline">
+              <a href={`mailto:${site.email}`} className="break-all text-gold hover:underline">
                 {site.email}
               </a>
               <a
@@ -74,7 +74,7 @@ export default function ContactPage() {
             <iframe
               title="Map of Quadri Cabs, Gogol Housing Board, Margao, Goa"
               src={site.mapEmbed}
-              className="h-[520px] w-full grayscale-[0.2] contrast-[1.05]"
+              className="h-[260px] w-full grayscale-[0.2] contrast-[1.05] sm:h-[400px] md:h-[520px]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
@@ -142,9 +142,9 @@ export default function ContactPage() {
           {faqs.map((item) => (
             <details key={item.q} className="group py-4">
               <summary className="cursor-pointer list-none font-medium">
-                <span className="flex justify-between gap-4">
-                  {item.q}
-                  <span className="text-gold">+</span>
+                <span className="flex justify-between gap-3 text-left">
+                  <span className="min-w-0">{item.q}</span>
+                  <span className="shrink-0 text-gold">+</span>
                 </span>
               </summary>
               <p className="mt-2 max-w-3xl text-sm text-foam/65">{item.a}</p>

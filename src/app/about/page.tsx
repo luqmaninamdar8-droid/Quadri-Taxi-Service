@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 md:px-6">
       <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">About</p>
-      <h1 className="title-rainbow animate-fade-up delay-1 mt-3 max-w-3xl font-display text-5xl">A South Goa taxi desk that still answers the phone at 3am</h1>
+      <h1 className="title-rainbow animate-fade-up delay-1 mt-3 max-w-3xl font-display text-3xl leading-tight sm:text-4xl md:text-5xl">A South Goa taxi desk that still answers the phone at 3am</h1>
       <div className="mt-10 grid items-start gap-10 md:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-5 text-foam/75 leading-relaxed">
           <p>
@@ -54,7 +54,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <dl className="mt-16 grid gap-6 rounded-[2rem] border border-white/10 p-8 sm:grid-cols-3">
+      <dl className="mt-16 grid gap-6 rounded-[1.5rem] border border-white/10 p-5 sm:grid-cols-3 sm:rounded-[2rem] sm:p-8">
         <div>
           <dt className="text-xs uppercase tracking-[0.2em] text-gold">Base</dt>
           <dd className="mt-2">{site.address.line}</dd>
@@ -71,7 +71,7 @@ export default function AboutPage() {
 
       <Reveal>
       <section className="mt-16">
-        <h2 className="title-rainbow font-display text-4xl">What we will not do</h2>
+        <h2 className="title-rainbow font-display text-3xl sm:text-4xl">What we will not do</h2>
         <p className="mt-4 max-w-2xl text-foam/70">
           We do not run shared tourist buses, meter-only surprises on quoted packages, or
           itineraries that treat every guest like a checklist. If a stop will ruin the
@@ -103,7 +103,7 @@ export default function AboutPage() {
 
       <Reveal>
       <section className="mt-16">
-        <h2 className="title-rainbow font-display text-4xl">Where the cars actually go</h2>
+        <h2 className="title-rainbow font-display text-3xl sm:text-4xl">Where the cars actually go</h2>
         <p className="mt-4 max-w-2xl text-foam/70">
           Daily work is South Goa heavy. North Goa and outstation jobs are scheduled,
           not improvised at midnight — unless you need an emergency airport run, which

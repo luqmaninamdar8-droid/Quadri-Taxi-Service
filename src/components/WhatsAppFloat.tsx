@@ -2,10 +2,10 @@ import { services, site, telHref, whatsappHref } from "@/lib/site";
 
 export function WhatsAppFloat() {
   return (
-    <div className="fixed bottom-5 right-5 z-50 grid gap-3">
+    <div className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] z-50 grid gap-2.5 sm:bottom-5 sm:right-5 sm:gap-3">
       <a
         href={telHref()}
-        className="grid h-14 w-14 place-items-center rounded-full bg-gold text-ink shadow-[0_10px_30px_rgba(228,177,90,0.45)] transition hover:scale-105"
+        className="grid h-12 w-12 place-items-center rounded-full bg-gold text-ink shadow-[0_10px_30px_rgba(228,177,90,0.45)] transition hover:scale-105 sm:h-14 sm:w-14"
         aria-label={`Call ${site.phoneDisplay}`}
       >
         <svg viewBox="0 0 24 24" className="h-6 w-6" fill="currentColor" aria-hidden>
@@ -16,7 +16,7 @@ export function WhatsAppFloat() {
         href={whatsappHref(
           `Hello Quadri Cabs, I need a ${services[0].title.toLowerCase()} in Goa.`
         )}
-        className="grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-[0_10px_30px_rgba(37,211,102,0.45)] transition hover:scale-105"
+        className="grid h-12 w-12 place-items-center rounded-full bg-[#25D366] text-white shadow-[0_10px_30px_rgba(37,211,102,0.45)] transition hover:scale-105 sm:h-14 sm:w-14"
         aria-label="Chat on WhatsApp"
       >
         <svg viewBox="0 0 32 32" className="h-7 w-7" fill="currentColor" aria-hidden>

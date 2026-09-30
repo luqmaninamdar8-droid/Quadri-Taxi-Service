@@ -41,13 +41,13 @@ export function Footer() {
             <br />
             {site.hours}
             <br />
-            <a href={`mailto:${site.email}`} className="mt-2 inline-block text-gold hover:underline">
+            <a href={`mailto:${site.email}`} className="mt-2 inline-block break-all text-gold hover:underline">
               {site.email}
             </a>
           </address>
         </div>
       </div>
-      <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-foam/45">
+      <div className="border-t border-white/10 px-4 py-5 pb-24 text-center text-xs text-foam/45 sm:pb-8">
         © 2026 {site.name}. Private taxis across Goa.
       </div>
     </footer>

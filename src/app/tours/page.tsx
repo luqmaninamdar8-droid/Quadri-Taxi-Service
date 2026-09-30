@@ -28,7 +28,7 @@ export default function ToursPage() {
         <div className="relative mx-auto flex h-full max-w-6xl items-end px-4 pb-12 md:px-6">
           <div>
             <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">Tours</p>
-            <h1 className="title-rainbow animate-fade-up delay-1 mt-3 font-display text-5xl">Holiday itineraries, written around you</h1>
+            <h1 className="title-rainbow animate-fade-up delay-1 mt-3 font-display text-3xl leading-tight sm:text-4xl md:text-5xl">Holiday itineraries, written around you</h1>
           </div>
         </div>
       </section>
@@ -60,7 +60,7 @@ export default function ToursPage() {
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {tours.map((tour) => (
             <Reveal key={tour.title}>
-            <article className="motion-card rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
+            <article className="motion-card rounded-[2rem] border border-white/10 bg-white/[0.03] p-5 sm:p-8">
               <p className="text-xs uppercase tracking-[0.25em] text-gold">{tour.duration}</p>
               <h2 className="title-rainbow mt-2 font-display text-3xl">{tour.title}</h2>
               <p className="mt-2 text-sm text-foam/50">Typical start: {tour.from}</p>
@@ -104,7 +104,7 @@ export default function ToursPage() {
               <li>4. We send a timed outline the evening before, with a weather or feast-day backup.</li>
             </ol>
           </div>
-          <div className="motion-card rounded-[2rem] border border-white/10 p-8">
+          <div className="motion-card rounded-[2rem] border border-white/10 p-5 sm:p-8">
             <h2 className="title-rainbow font-display text-3xl">Season notes</h2>
             <p className="mt-4 text-sm leading-relaxed text-foam/70">
               October to March is the busiest window for North Goa beaches and sunset forts.

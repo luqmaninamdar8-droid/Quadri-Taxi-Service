@@ -22,12 +22,30 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   background: var(--ink);
   color: var(--foam);
   font-family: var(--font-outfit), system-ui, sans-serif;
+  overflow-x: clip;
+  overflow-wrap: break-word;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  min-width: 0;
+  width: 100%;
+  font-size: 1rem;
 }
 
 ::selection {
@@ -139,6 +157,13 @@ body {
   transform: translateY(-6px);
   border-color: rgba(228, 177, 90, 0.45);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+@media (hover: none) {
+  .motion-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

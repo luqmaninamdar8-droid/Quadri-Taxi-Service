@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <section className="relative min-h-[92vh] overflow-hidden">
+      <section className="relative min-h-[100svh] overflow-hidden">
         <Image
           src="/images/hero.jpg"
           alt="Palm-lined beach road in Goa at golden hour"
@@ -28,33 +28,33 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/55 to-ink" />
         <div className="grain pointer-events-none absolute inset-0 opacity-30 mix-blend-overlay" />
-        <div className="relative mx-auto flex min-h-[92vh] max-w-6xl items-center px-4 pb-16 pt-28 md:px-6">
-          <div>
-          <p className="animate-fade-up text-xs uppercase tracking-[0.35em] text-gold">Margao · South Goa</p>
-          <h1 className="title-rainbow animate-fade-up delay-1 mt-4 max-w-3xl font-display text-4xl leading-[1.05] md:text-6xl lg:text-7xl">
+        <div className="relative mx-auto flex min-h-[100svh] max-w-6xl items-center px-4 pb-36 pt-24 sm:pt-28 md:px-6">
+          <div className="w-full min-w-0">
+          <p className="animate-fade-up text-[11px] uppercase tracking-[0.2em] text-gold sm:text-xs sm:tracking-[0.35em]">Margao · South Goa</p>
+          <h1 className="title-rainbow animate-fade-up delay-1 mt-4 max-w-3xl font-display text-[2rem] leading-[1.08] sm:text-4xl md:text-6xl lg:text-7xl">
             Private rides that feel like the rest of your Goa holiday.
           </h1>
-          <p className="animate-fade-up delay-2 mt-5 max-w-xl text-lg text-foam/75">
+          <p className="animate-fade-up delay-2 mt-5 max-w-xl text-base text-foam/75 sm:text-lg">
             Quadri Cabs is a 24/7 private transportation and tour provider based
             at Gogol Housing Board, Margao. We run airport taxis, corporate cars, long-distance
             outstation trips, luxury vehicles, minibuses, and holiday itineraries written
             around your hotels and flight times — not a packed sightseeing bus.
           </p>
-          <div className="animate-fade-up delay-3 mt-8 flex flex-wrap gap-3">
+          <div className="animate-fade-up delay-3 mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href="#book"
-              className="rounded-full bg-gold px-6 py-3 font-semibold text-ink hover:bg-sand"
+              className="rounded-full bg-gold px-6 py-3 text-center font-semibold text-ink hover:bg-sand"
             >
               Book a car now
             </a>
             <a
               href="#rental-form"
-              className="rounded-full border border-white/20 px-6 py-3 text-foam hover:border-gold"
+              className="rounded-full border border-white/20 px-6 py-3 text-center text-foam hover:border-gold"
             >
               Book a rental package
             </a>
           </div>
-          <dl className="animate-fade-up delay-4 mt-12 grid max-w-3xl grid-cols-3 gap-4 border-t border-white/10 pt-6 text-sm">
+          <dl className="animate-fade-up delay-4 mt-12 grid max-w-3xl grid-cols-1 gap-5 border-t border-white/10 pt-6 text-sm sm:grid-cols-3 sm:gap-4">
             <div>
               <dt className="text-foam/50">Hours</dt>
               <dd className="mt-1 font-medium text-gold">24/7 dispatch</dd>
@@ -83,7 +83,7 @@ export default function HomePage() {
       <Reveal>
       <section id="book" className="mx-auto max-w-6xl scroll-mt-28 px-4 py-16 md:px-6">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Packages & booking</p>
-        <h2 className="title-rainbow mt-3 font-display text-4xl">Book a car or an hourly package</h2>
+        <h2 className="title-rainbow mt-3 font-display text-3xl sm:text-4xl">Book a car or an hourly package</h2>
         <p className="mt-4 max-w-2xl text-foam/65">
           Use the car form for airport and one-way trips. Use the rental form for
           hourly hire with a kilometre limit. We reply with a fixed fare on WhatsApp.
@@ -98,7 +98,7 @@ export default function HomePage() {
       <Reveal>
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">How booking works</p>
-        <h2 className="title-rainbow mt-3 font-display text-4xl">Four messages. Then a car at the door.</h2>
+        <h2 className="title-rainbow mt-3 font-display text-3xl sm:text-4xl">Four messages. Then a car at the door.</h2>
         <p className="mt-4 max-w-2xl text-foam/65">
           Most first bookings take a few minutes on WhatsApp. You do not need an app
           login. Send the brief, lock the fare, meet the chauffeur.
@@ -117,10 +117,10 @@ export default function HomePage() {
 
       <Reveal>
       <section id="services" className="mx-auto max-w-6xl px-4 py-20 md:px-6">
-        <div className="flex items-end justify-between gap-6">
+        <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end sm:gap-6">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-gold">Services</p>
-            <h2 className="title-rainbow mt-3 font-display text-4xl md:text-5xl">Five ways we move you through Goa</h2>
+            <h2 className="title-rainbow mt-3 font-display text-3xl sm:text-4xl md:text-5xl">Five ways we move you through Goa</h2>
             <p className="mt-3 max-w-xl text-sm text-foam/60">
               Airport taxis, corporate cars, long-distance outstation trips, luxury vehicles,
               and minibuses — each with a private chauffeur and a fare agreed in advance.
@@ -175,7 +175,7 @@ export default function HomePage() {
           </div>
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-gold">Why Quadri</p>
-            <h2 className="title-rainbow mt-3 font-display text-4xl">South Goa based. Whole-state reach.</h2>
+            <h2 className="title-rainbow mt-3 font-display text-3xl sm:text-4xl">South Goa based. Whole-state reach.</h2>
             <p className="mt-4 text-foam/70">
               From Gogol Housing Board we dispatch chauffeurs who already know Colva,
               Palolem, the Margao railway station, and the late-night run to Mopa. You get
@@ -212,7 +212,7 @@ export default function HomePage() {
       <Reveal>
       <section className="mx-auto max-w-6xl px-4 py-20 md:px-6">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Holiday itineraries</p>
-        <h2 className="title-rainbow mt-3 font-display text-4xl">Tours paced like a private driver, not a bus.</h2>
+        <h2 className="title-rainbow mt-3 font-display text-3xl sm:text-4xl">Tours paced like a private driver, not a bus.</h2>
         <p className="mt-4 max-w-2xl text-foam/65">
           Sample days below are starting points. We shorten, swap beaches, add a spice
           lunch, or keep the same car for two days once we know your hotel and energy levels.
@@ -220,9 +220,9 @@ export default function HomePage() {
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {tours.slice(0, 4).map((tour) => (
             <article key={tour.title} className="motion-card rounded-3xl border border-white/10 p-6">
-              <div className="flex items-baseline justify-between gap-4">
-                <h3 className="font-display text-2xl">{tour.title}</h3>
-                <span className="text-sm text-gold">{tour.duration}</span>
+              <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                <h3 className="font-display text-xl sm:text-2xl">{tour.title}</h3>
+                <span className="shrink-0 text-sm text-gold">{tour.duration}</span>
               </div>
               <p className="mt-2 text-sm text-foam/50">From {tour.from}</p>
               <p className="mt-3 text-sm leading-relaxed text-foam/70">{tour.blurb}</p>
@@ -241,7 +241,7 @@ export default function HomePage() {
 
       <Reveal>
       <section className="mx-auto max-w-6xl px-4 pb-20 md:px-6">
-        <h2 className="title-rainbow font-display text-4xl">Guests remember the car as much as the beach</h2>
+        <h2 className="title-rainbow font-display text-3xl sm:text-4xl">Guests remember the car as much as the beach</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           {reviews.map((review) => (
             <blockquote key={review.name} className="motion-card rounded-3xl bg-white/[0.04] p-6">
@@ -259,7 +259,7 @@ export default function HomePage() {
       <Reveal>
       <section className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Coverage</p>
-        <h2 className="title-rainbow mt-3 font-display text-4xl">Pickups across South Goa — and the rest of the map</h2>
+        <h2 className="title-rainbow mt-3 font-display text-3xl sm:text-4xl">Pickups across South Goa — and the rest of the map</h2>
         <p className="mt-4 max-w-2xl text-foam/65">
           Our desk sits in Margao. Cars fan out daily to the
           beaches, both airports, the railway station, and North Goa hotels.
@@ -288,14 +288,14 @@ export default function HomePage() {
 
       <Reveal>
       <section className="mx-auto max-w-6xl px-4 pb-24 md:px-6">
-        <h2 className="title-rainbow font-display text-4xl">Questions before you land</h2>
+        <h2 className="title-rainbow font-display text-3xl sm:text-4xl">Questions before you land</h2>
         <div className="mt-8 divide-y divide-white/10 border-y border-white/10">
           {faqs.map((item) => (
             <details key={item.q} className="group py-5">
               <summary className="cursor-pointer list-none font-medium marker:content-none">
-                <span className="flex items-center justify-between gap-4">
-                  {item.q}
-                  <span className="text-gold group-open:rotate-45">+</span>
+                <span className="flex items-start justify-between gap-3">
+                  <span className="min-w-0">{item.q}</span>
+                  <span className="shrink-0 text-gold group-open:rotate-45">+</span>
                 </span>
               </summary>
               <p className="mt-3 max-w-3xl text-sm text-foam/65">{item.a}</p>

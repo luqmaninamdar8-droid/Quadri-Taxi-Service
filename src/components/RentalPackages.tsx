@@ -15,7 +15,7 @@ export function RentalPackages() {
   return (
     <section id="rental-packages">
       <p className="text-xs uppercase tracking-[0.3em] text-gold">Local hire</p>
-      <h2 className="title-rainbow mt-3 font-display text-4xl">Rental package</h2>
+      <h2 className="title-rainbow mt-3 font-display text-3xl sm:text-4xl">Rental package</h2>
       <p className="mt-4 max-w-2xl text-foam/70">
         Hourly cabs with a matching kilometre limit. Extra hours and extra km are
         quoted before you extend. Tap a package, then send the form — we reply with a
@@ -29,14 +29,14 @@ export function RentalPackages() {
               <button
                 type="button"
                 onClick={() => choosePackage(pkg.label)}
-                className={`motion-card flex h-full w-full items-center justify-between gap-3 rounded-2xl border px-5 py-4 text-left ${
+                className={`motion-card flex h-full w-full min-w-0 items-center justify-between gap-3 rounded-2xl border px-4 py-4 text-left sm:px-5 ${
                   active
                     ? "border-gold bg-gold/10 ring-2 ring-gold/30"
                     : "border-white/10 bg-white/[0.03] hover:bg-gold/5"
                 }`}
               >
-                <span>
-                  <span className="block font-display text-xl">
+                <span className="min-w-0">
+                  <span className="block font-display text-lg sm:text-xl">
                     {pkg.hours} {pkg.hours === 1 ? "Hour" : "Hours"}
                   </span>
                   <span className="mt-1 block text-sm text-foam/55">{pkg.km} km</span>

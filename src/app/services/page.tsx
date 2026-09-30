@@ -22,7 +22,7 @@ export default function ServicesPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 md:px-6">
       <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">Fleet & services</p>
-      <h1 className="title-rainbow animate-fade-up delay-1 mt-3 max-w-3xl font-display text-5xl">A car for every Goa plan</h1>
+      <h1 className="title-rainbow animate-fade-up delay-1 mt-3 max-w-3xl font-display text-3xl sm:text-4xl md:text-5xl">A car for every Goa plan</h1>
       <p className="animate-fade-up delay-2 mt-4 max-w-2xl text-foam/70">
         From a solo airport sprint to a 17-seat family circuit, Quadri Cabs
         keeps the same 24/7 promise: a private vehicle, a known chauffeur, and a fare
@@ -64,7 +64,7 @@ export default function ServicesPage() {
               />
             </div>
             <div>
-              <h2 className="title-rainbow font-display text-4xl">{service.title}</h2>
+              <h2 className="title-rainbow font-display text-3xl sm:text-4xl">{service.title}</h2>
               <p className="mt-4 leading-relaxed text-foam/70">{service.details}</p>
               <p className="mt-3 leading-relaxed text-foam/70">{service.extra}</p>
               <ul className="mt-6 flex flex-wrap gap-2">
@@ -98,7 +98,7 @@ export default function ServicesPage() {
       <Reveal>
       <section id="cab-services" className="mt-20">
         <p className="text-xs uppercase tracking-[0.3em] text-gold">Coverage</p>
-        <h2 className="title-rainbow mt-3 font-display text-4xl">Cab services</h2>
+        <h2 className="title-rainbow mt-3 font-display text-3xl sm:text-4xl">Cab services</h2>
         <p className="mt-4 max-w-2xl text-foam/70">
           Private cabs for hotel pickups, airport drops, and local hops across these
           Goa locations. Same 24/7 desk, Swift Dzire, Baleno, Ertiga, Innova Crysta, or Kia Carens.
@@ -108,10 +108,10 @@ export default function ServicesPage() {
             <li key={place}>
               <a
                 href={whatsappHref(`Hello Quadri Cabs, I need a cab in ${place}.`)}
-                className="motion-card flex h-full items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 hover:bg-gold/5"
+                className="motion-card flex h-full min-w-0 items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 sm:px-5 hover:bg-gold/5"
               >
-                <span>
-                  <span className="block font-display text-xl">{place}</span>
+                <span className="min-w-0">
+                  <span className="block font-display text-lg leading-snug sm:text-xl">{place}</span>
                   <span className="mt-1 block text-xs text-foam/50">Cab service · 24/7</span>
                 </span>
                 <span className="text-sm text-gold">Book →</span>
@@ -130,7 +130,7 @@ export default function ServicesPage() {
 
       <Reveal>
       <section className="mt-20">
-        <h2 className="title-rainbow font-display text-4xl">What stays the same on every booking</h2>
+        <h2 className="title-rainbow font-display text-3xl sm:text-4xl">What stays the same on every booking</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           {[
             {
@@ -162,9 +162,9 @@ export default function ServicesPage() {
           {faqs.slice(0, 6).map((item) => (
             <details key={item.q} className="group py-4">
               <summary className="cursor-pointer list-none font-medium">
-                <span className="flex justify-between gap-4">
-                  {item.q}
-                  <span className="text-gold">+</span>
+                <span className="flex justify-between gap-3 text-left">
+                  <span className="min-w-0">{item.q}</span>
+                  <span className="shrink-0 text-gold">+</span>
                 </span>
               </summary>
               <p className="mt-2 text-sm text-foam/65">{item.a}</p>

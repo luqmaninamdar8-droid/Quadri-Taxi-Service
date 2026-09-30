@@ -14,14 +14,14 @@ export function LogoMark({ className = "h-11 w-11" }: { className?: string }) {
 
 export function Logo({ showTagline = true }: { showTagline?: boolean }) {
   return (
-    <span className="flex items-center gap-3">
-      <LogoMark className="h-11 w-11 shrink-0 drop-shadow-[0_0_18px_rgba(228,177,90,0.28)]" />
-      <span>
-        <span className="title-rainbow block font-display text-lg leading-none tracking-tight">
+    <span className="flex min-w-0 items-center gap-2 sm:gap-3">
+      <LogoMark className="h-9 w-9 shrink-0 drop-shadow-[0_0_18px_rgba(228,177,90,0.28)] sm:h-11 sm:w-11" />
+      <span className="min-w-0">
+        <span className="title-rainbow block font-display text-base leading-none tracking-tight sm:text-lg">
           Quadri Cabs
         </span>
         {showTagline ? (
-          <span className="mt-1 block text-[11px] uppercase tracking-[0.22em] text-foam/55">
+          <span className="mt-1 block truncate text-[10px] uppercase tracking-[0.14em] text-foam/55 sm:text-[11px] sm:tracking-[0.22em]">
             South Goa · 24/7
           </span>
         ) : null}

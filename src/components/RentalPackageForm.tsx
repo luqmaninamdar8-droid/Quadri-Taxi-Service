@@ -42,7 +42,7 @@ export function RentalPackageForm({
     <form
       id="rental-form"
       onSubmit={onSubmit}
-      className={`grid scroll-mt-28 gap-4 rounded-3xl border border-white/10 p-6 ${
+      className={`grid min-w-0 scroll-mt-28 gap-4 rounded-3xl border border-white/10 p-4 sm:p-6 ${
         compact ? "bg-ink/80 shadow-[0_20px_60px_rgba(0,0,0,0.45)] backdrop-blur-xl" : ""
       }`}
     >
