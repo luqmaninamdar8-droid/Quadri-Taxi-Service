@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
+import { HeroActions } from "@/components/HeroActions";
 import { RentalPackages } from "@/components/RentalPackages";
 import { Reveal } from "@/components/Reveal";
 import { cabServiceLocations, faqs, services, whatsappHref } from "@/lib/site";
@@ -33,6 +34,7 @@ export default function ServicesPage() {
         Mopa airports, Madgaon station, South Goa beaches, North Goa hotels, and
         outstation highways into Maharashtra and Karnataka.
       </p>
+      <HeroActions className="animate-fade-up delay-3 mt-8" />
 
       <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {[

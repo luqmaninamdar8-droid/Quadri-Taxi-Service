@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { BookingForm } from "@/components/BookingForm";
 import { RentalPackageForm } from "@/components/RentalPackageForm";
 import { CtaBanner } from "@/components/CtaBanner";
+import { HeroActions } from "@/components/HeroActions";
 import { Reveal } from "@/components/Reveal";
 import { areas, faqs, pickupTips, site, telHref } from "@/lib/site";
 
@@ -27,10 +28,11 @@ export default function ContactPage() {
         close to Madgaon railway station and a straightforward drive to Colva and
         Benaulim. If you are a guest, you do not need to visit — we collect you.
       </p>
+      <HeroActions className="animate-fade-up delay-3 mt-8" />
 
       <div className="mt-12 grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-6">
-          <div className="motion-card rounded-3xl border border-white/10 p-5 pr-20 sm:p-6 lg:pr-6">
+          <div className="motion-card rounded-3xl border border-white/10 p-6">
             <h2 className="title-rainbow font-display text-2xl">Quadri Cabs</h2>
             <address className="mt-3 not-italic leading-relaxed text-foam/75">
               {site.address.line}

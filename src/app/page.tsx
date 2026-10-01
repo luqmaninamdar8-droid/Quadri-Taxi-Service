@@ -4,6 +4,7 @@ import Link from "next/link";
 import { areas, faqs, howWeBook, reviews, services, site, tours, whatsappHref } from "@/lib/site";
 import { CtaBanner } from "@/components/CtaBanner";
 import { BookingForm } from "@/components/BookingForm";
+import { HeroActions } from "@/components/HeroActions";
 import { RentalPackageForm } from "@/components/RentalPackageForm";
 import { Reveal } from "@/components/Reveal";
 
@@ -28,7 +29,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/55 to-ink" />
         <div className="grain pointer-events-none absolute inset-0 opacity-30 mix-blend-overlay" />
-        <div className="relative mx-auto flex min-h-[100svh] max-w-6xl items-center px-4 pb-36 pt-24 sm:pt-28 md:px-6">
+        <div className="relative mx-auto flex min-h-[100svh] max-w-6xl items-center px-4 pb-32 pt-24 sm:pt-28 md:px-6">
           <div className="w-full min-w-0">
           <p className="animate-fade-up text-[11px] uppercase tracking-[0.2em] text-gold sm:text-xs sm:tracking-[0.35em]">Margao · South Goa</p>
           <h1 className="title-rainbow animate-fade-up delay-1 mt-4 max-w-3xl font-display text-[2rem] leading-[1.08] sm:text-4xl md:text-6xl lg:text-7xl">
@@ -40,20 +41,7 @@ export default function HomePage() {
             outstation trips, luxury vehicles, minibuses, and holiday itineraries written
             around your hotels and flight times — not a packed sightseeing bus.
           </p>
-          <div className="animate-fade-up delay-3 mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <a
-              href="#book"
-              className="rounded-full bg-gold px-6 py-3 text-center font-semibold text-ink hover:bg-sand"
-            >
-              Book a car now
-            </a>
-            <a
-              href="#rental-form"
-              className="rounded-full border border-white/20 px-6 py-3 text-center text-foam hover:border-gold"
-            >
-              Book a rental package
-            </a>
-          </div>
+          <HeroActions className="animate-fade-up delay-3 mt-8" />
           <dl className="animate-fade-up delay-4 mt-12 grid max-w-3xl grid-cols-1 gap-5 border-t border-white/10 pt-6 text-sm sm:grid-cols-3 sm:gap-4">
             <div>
               <dt className="text-foam/50">Hours</dt>

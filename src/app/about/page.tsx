@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
+import { HeroActions } from "@/components/HeroActions";
 import { Reveal } from "@/components/Reveal";
 import { areas, site } from "@/lib/site";
 
@@ -17,6 +18,7 @@ export default function AboutPage() {
     <div className="mx-auto max-w-6xl px-4 py-16 md:px-6">
       <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">About</p>
       <h1 className="title-rainbow animate-fade-up delay-1 mt-3 max-w-3xl font-display text-3xl leading-tight sm:text-4xl md:text-5xl">A South Goa taxi desk that still answers the phone at 3am</h1>
+      <HeroActions className="animate-fade-up delay-2 mt-8" />
       <div className="mt-10 grid items-start gap-10 md:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-5 text-foam/75 leading-relaxed">
           <p>

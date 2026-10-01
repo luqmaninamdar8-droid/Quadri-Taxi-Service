@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { CtaBanner } from "@/components/CtaBanner";
+import { HeroActions } from "@/components/HeroActions";
 import { RentalPackages } from "@/components/RentalPackages";
 import { Reveal } from "@/components/Reveal";
 import { tours, whatsappHref } from "@/lib/site";
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 export default function ToursPage() {
   return (
     <>
-      <section className="relative h-[48vh] min-h-[320px]">
+      <section className="relative h-[52vh] min-h-[360px]">
         <Image
           src="/images/coast.jpg"
           alt="Turquoise water and sand on a Goa coastline"
@@ -25,10 +26,11 @@ export default function ToursPage() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-ink/60" />
-        <div className="relative mx-auto flex h-full max-w-6xl items-end px-4 pb-12 md:px-6">
+        <div className="relative mx-auto flex h-full max-w-6xl items-end px-4 pb-28 md:px-6">
           <div>
             <p className="animate-fade-up text-xs uppercase tracking-[0.3em] text-gold">Tours</p>
             <h1 className="title-rainbow animate-fade-up delay-1 mt-3 font-display text-3xl leading-tight sm:text-4xl md:text-5xl">Holiday itineraries, written around you</h1>
+            <HeroActions className="animate-fade-up delay-2 mt-6" />
           </div>
         </div>
       </section>

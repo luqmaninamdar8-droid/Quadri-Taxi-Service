@@ -4,7 +4,7 @@ import Script from "next/script";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
-import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { BottomActions } from "@/components/BottomActions";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -84,9 +84,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
         <JsonLd />
         <Header />
-        <main className="pt-[68px] pb-[7.5rem] sm:pt-[72px]">{children}</main>
+        <main className="pt-[68px] pb-24 sm:pt-[72px]">{children}</main>
         <Footer />
-        <WhatsAppFloat />
+        <BottomActions />
       </body>
     </html>
   );

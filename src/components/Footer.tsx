@@ -47,7 +47,7 @@ export function Footer() {
           </address>
         </div>
       </div>
-      <div className="border-t border-white/10 px-4 py-5 pb-24 text-center text-xs text-foam/45 sm:pb-8">
+      <div className="border-t border-white/10 px-4 py-5 pb-24 text-center text-xs text-foam/45">
         © 2026 {site.name}. Private taxis across Goa.
       </div>
     </footer>
